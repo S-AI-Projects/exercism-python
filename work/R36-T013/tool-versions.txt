@@ -1,0 +1,3 @@
+Python: 3.13.5 (/tmp/r36-t012-py313/bin/python3)
+pytest 8.4.2
+pytest-subtests: 0.14.2

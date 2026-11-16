@@ -1,0 +1,28 @@
+{
+  "expected": {
+    "original": {
+      "passed": 20
+    },
+    "mutant": {
+      "rejecting_case": "test_wrong_ordered_brackets"
+    },
+    "diagnostic_input": {
+      "}": false
+    }
+  },
+  "actual": {
+    "original_return_code": 0,
+    "original_counts": {
+      "passed": 20
+    },
+    "mutant_return_code": 1,
+    "mutant_counts": {
+      "failed": 3,
+      "passed": 17
+    },
+    "mutant_rejected_by_named_case": true,
+    "original_diagnostic_value": "False",
+    "mutant_diagnostic_value": "True",
+    "learner_solution_unchanged": true
+  }
+}

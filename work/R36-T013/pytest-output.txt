@@ -1,0 +1,38 @@
+=== Original reference ===
+....................                                                     [100%]
+20 passed in 0.01s
+=== Mutant reference ===
+..F...........F....F                                                     [100%]
+=================================== FAILURES ===================================
+_____________ MatchingBracketsTest.test_early_unexpected_brackets ______________
+
+self = <matching_brackets_test.MatchingBracketsTest testMethod=test_early_unexpected_brackets>
+
+    def test_early_unexpected_brackets(self):
+>       self.assertEqual(is_paired(")()"), False)
+E       AssertionError: True != False
+
+matching_brackets_test.py:62: AssertionError
+_____________ MatchingBracketsTest.test_too_many_closing_brackets ______________
+
+self = <matching_brackets_test.MatchingBracketsTest testMethod=test_too_many_closing_brackets>
+
+    def test_too_many_closing_brackets(self):
+>       self.assertEqual(is_paired("[]]"), False)
+E       AssertionError: True != False
+
+matching_brackets_test.py:59: AssertionError
+_______________ MatchingBracketsTest.test_wrong_ordered_brackets _______________
+
+self = <matching_brackets_test.MatchingBracketsTest testMethod=test_wrong_ordered_brackets>
+
+    def test_wrong_ordered_brackets(self):
+>       self.assertEqual(is_paired("}{"), False)
+E       AssertionError: True != False
+
+matching_brackets_test.py:23: AssertionError
+=========================== short test summary info ============================
+FAILED matching_brackets_test.py::MatchingBracketsTest::test_early_unexpected_brackets
+FAILED matching_brackets_test.py::MatchingBracketsTest::test_too_many_closing_brackets
+FAILED matching_brackets_test.py::MatchingBracketsTest::test_wrong_ordered_brackets
+3 failed, 17 passed in 0.01s

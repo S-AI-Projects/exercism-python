@@ -1,0 +1,17 @@
+{
+  "exercise": "matching-brackets",
+  "config": "/Users/sanskarkesharwani/exercism-python/exercises/practice/matching-brackets/.meta/config.json",
+  "solution_from_config": "matching_brackets.py",
+  "test_from_config": "matching_brackets_test.py",
+  "reference_from_config": ".meta/example.py",
+  "focused_cases": [
+    "test_empty_string",
+    "test_paired_square_brackets",
+    "test_unpaired_brackets"
+  ],
+  "expected_case_count": 20,
+  "mutation": "empty-stack unmatched closer returns True instead of False",
+  "mutation_rejecting_test": "test_wrong_ordered_brackets",
+  "diagnostic_input": "}",
+  "diagnostic_expected_result": false
+}

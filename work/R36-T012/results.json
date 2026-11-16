@@ -1,0 +1,20 @@
+{
+  "expected": {
+    "executed_cases": 26,
+    "status": "all passed"
+  },
+  "actual": {
+    "executed_cases": 26,
+    "status": "passed",
+    "return_code": 0,
+    "pytest_counts": {
+      "passed": 26
+    }
+  },
+  "focused_cases_present": [
+    "test_methionine_rna_sequence",
+    "test_phenylalanine_rna_sequence_1",
+    "test_phenylalanine_rna_sequence_2"
+  ],
+  "learner_solution_unchanged": true
+}

@@ -1,0 +1,108 @@
+{
+  "inputs": [
+    {
+      "name": "test_no_difference_between_empty_strands",
+      "inputs": [
+        "",
+        ""
+      ],
+      "expected": 0
+    },
+    {
+      "name": "test_no_difference_between_identical_strands",
+      "inputs": [
+        "GGACTGA",
+        "GGACTGA"
+      ],
+      "expected": 0
+    },
+    {
+      "name": "test_complete_hamming_distance_in_small_strand",
+      "inputs": [
+        "ACT",
+        "GGA"
+      ],
+      "expected": 3
+    }
+  ],
+  "named_case_results": {
+    "before": [
+      {
+        "name": "test_no_difference_between_empty_strands",
+        "inputs": [
+          "",
+          ""
+        ],
+        "expected": 0,
+        "actual": 0
+      },
+      {
+        "name": "test_no_difference_between_identical_strands",
+        "inputs": [
+          "GGACTGA",
+          "GGACTGA"
+        ],
+        "expected": 0,
+        "actual": 0
+      },
+      {
+        "name": "test_complete_hamming_distance_in_small_strand",
+        "inputs": [
+          "ACT",
+          "GGA"
+        ],
+        "expected": 3,
+        "actual": 3
+      }
+    ],
+    "after": [
+      {
+        "name": "test_no_difference_between_empty_strands",
+        "inputs": [
+          "",
+          ""
+        ],
+        "expected": 0,
+        "actual": 0
+      },
+      {
+        "name": "test_no_difference_between_identical_strands",
+        "inputs": [
+          "GGACTGA",
+          "GGACTGA"
+        ],
+        "expected": 0,
+        "actual": 0
+      },
+      {
+        "name": "test_complete_hamming_distance_in_small_strand",
+        "inputs": [
+          "ACT",
+          "GGA"
+        ],
+        "expected": 3,
+        "actual": 3
+      }
+    ]
+  },
+  "enabled_test_cases": {
+    "before": 8,
+    "after": 8
+  },
+  "pytest_runs": {
+    "before": {
+      "returncode": 0,
+      "tests": 8,
+      "output": "........                                                                 [100%]\n8 passed in 0.00s"
+    },
+    "after": {
+      "returncode": 0,
+      "tests": 8,
+      "output": "........                                                                 [100%]\n8 passed in 0.00s"
+    }
+  },
+  "tool_versions": {
+    "python": "Python 3.15.2",
+    "pytest": "pytest 9.2.0"
+  }
+}

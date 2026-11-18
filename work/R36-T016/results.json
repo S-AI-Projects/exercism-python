@@ -1,0 +1,37 @@
+{
+  "input": {
+    "exercise": "exercises/practice/all-your-base",
+    "command": "python3 -m pytest -q",
+    "case_count_from_tests_toml": 21,
+    "required_cases": [
+      "test_single_bit_one_to_decimal",
+      "test_binary_to_single_decimal",
+      "test_single_decimal_to_binary"
+    ],
+    "dotfiles_copied": true,
+    "reference_example_copied_to_solution_only_in_temporary_copy": true,
+    "alternative_source": "work/R36-T016/alternative.py"
+  },
+  "expected": {
+    "each_implementation_passes": 21,
+    "zero_test_run_is_failure": true
+  },
+  "actual": [
+    {
+      "implementation": "reference",
+      "return_code": 0,
+      "enabled_cases_expected": 21,
+      "passed_cases_actual": 21,
+      "tests_passed": true,
+      "output_file": "reference-pytest-output.txt"
+    },
+    {
+      "implementation": "digit-vector",
+      "return_code": 0,
+      "enabled_cases_expected": 21,
+      "passed_cases_actual": 21,
+      "tests_passed": true,
+      "output_file": "digit-vector-pytest-output.txt"
+    }
+  ]
+}

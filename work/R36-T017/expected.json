@@ -1,0 +1,10 @@
+{
+  "micro_example_stdout_lines": [
+    "431",
+    "0",
+    "TypeError without initializer"
+  ],
+  "reference_test_count": "all collected cases, including the three named cases",
+  "reference_test_returncode": 0,
+  "learner_solution_modified": false
+}

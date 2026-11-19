@@ -10,7 +10,129 @@
     ],
     "dotfiles_copied": true,
     "reference_example_copied_to_solution_only_in_temporary_copy": true,
-    "alternative_source": "work/R36-T016/alternative.py"
+    "alternative_source": "work/R36-T016/alternative.py",
+    "named_case_inputs_expected_actual": [
+      {
+        "implementation": "reference",
+        "case": "test_single_bit_one_to_decimal",
+        "input": {
+          "from_base": 2,
+          "digits": [
+            1
+          ],
+          "to_base": 10
+        },
+        "expected": [
+          1
+        ],
+        "actual": [
+          1
+        ],
+        "passed": true
+      },
+      {
+        "implementation": "reference",
+        "case": "test_binary_to_single_decimal",
+        "input": {
+          "from_base": 2,
+          "digits": [
+            1,
+            0,
+            1
+          ],
+          "to_base": 10
+        },
+        "expected": [
+          5
+        ],
+        "actual": [
+          5
+        ],
+        "passed": true
+      },
+      {
+        "implementation": "reference",
+        "case": "test_single_decimal_to_binary",
+        "input": {
+          "from_base": 10,
+          "digits": [
+            5
+          ],
+          "to_base": 2
+        },
+        "expected": [
+          1,
+          0,
+          1
+        ],
+        "actual": [
+          1,
+          0,
+          1
+        ],
+        "passed": true
+      },
+      {
+        "implementation": "digit-vector",
+        "case": "test_single_bit_one_to_decimal",
+        "input": {
+          "from_base": 2,
+          "digits": [
+            1
+          ],
+          "to_base": 10
+        },
+        "expected": [
+          1
+        ],
+        "actual": [
+          1
+        ],
+        "passed": true
+      },
+      {
+        "implementation": "digit-vector",
+        "case": "test_binary_to_single_decimal",
+        "input": {
+          "from_base": 2,
+          "digits": [
+            1,
+            0,
+            1
+          ],
+          "to_base": 10
+        },
+        "expected": [
+          5
+        ],
+        "actual": [
+          5
+        ],
+        "passed": true
+      },
+      {
+        "implementation": "digit-vector",
+        "case": "test_single_decimal_to_binary",
+        "input": {
+          "from_base": 10,
+          "digits": [
+            5
+          ],
+          "to_base": 2
+        },
+        "expected": [
+          1,
+          0,
+          1
+        ],
+        "actual": [
+          1,
+          0,
+          1
+        ],
+        "passed": true
+      }
+    ]
   },
   "expected": {
     "each_implementation_passes": 21,

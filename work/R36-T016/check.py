@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import json
+import importlib.metadata
 import platform
 import re
+import runpy
 import shutil
 import subprocess
 import sys
@@ -76,10 +78,31 @@ def main() -> None:
             capture_output=True,
             text=True,
         ).stdout.strip(),
+        "pytest-subtests": importlib.metadata.version("pytest-subtests"),
     }
     (EVIDENCE / "versions.json").write_text(json.dumps(versions, indent=2) + "\n")
 
     outcomes = []
+    named_inputs = (
+        ("test_single_bit_one_to_decimal", 2, [1], 10, [1]),
+        ("test_binary_to_single_decimal", 2, [1, 0, 1], 10, [5]),
+        ("test_single_decimal_to_binary", 10, [5], 2, [1, 0, 1]),
+    )
+    named_results = []
+    for label, implementation in (("reference", EXERCISE / example_name),
+                                  ("digit-vector", EVIDENCE / "alternative.py")):
+        rebase = runpy.run_path(str(implementation))["rebase"]
+        for case, from_base, digits, to_base, expected in named_inputs:
+            actual = rebase(from_base, digits, to_base)
+            named_results.append({
+                "implementation": label,
+                "case": case,
+                "input": {"from_base": from_base, "digits": digits, "to_base": to_base},
+                "expected": expected,
+                "actual": actual,
+                "passed": actual == expected,
+            })
+
     with tempfile.TemporaryDirectory(prefix="all-your-base-approaches-") as temporary:
         scratch_root = Path(temporary)
         outcomes.append(run_copy("reference", EXERCISE / example_name, solution_name, test_name,
@@ -96,6 +119,7 @@ def main() -> None:
             "dotfiles_copied": True,
             "reference_example_copied_to_solution_only_in_temporary_copy": True,
             "alternative_source": "work/R36-T016/alternative.py",
+            "named_case_inputs_expected_actual": named_results,
         },
         "expected": {"each_implementation_passes": enabled_cases, "zero_test_run_is_failure": True},
         "actual": [
@@ -115,6 +139,8 @@ def main() -> None:
     require(all(outcome["passed_cases_actual"] > 0 for outcome in outcomes), "a pytest child ran zero tests")
     require(all(outcome["passed_cases_actual"] == enabled_cases for outcome in outcomes),
             "an implementation did not pass every enabled case")
+    require(all(result["passed"] for result in named_results),
+            "a required named case did not match its expected result")
     print(f"PASS: both implementations passed all {enabled_cases} enabled cases.")
 
 

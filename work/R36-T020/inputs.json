@@ -1,0 +1,29 @@
+{
+  "exercise": "exercises/practice/secret-handshake",
+  "test_file": "secret_handshake_test.py",
+  "test_cases_in_file": 11,
+  "selected_cases": [
+    {
+      "test": "test_wink_for_1",
+      "input": "00001",
+      "expected": [
+        "wink"
+      ]
+    },
+    {
+      "test": "test_double_blink_for_10",
+      "input": "00010",
+      "expected": [
+        "double blink"
+      ]
+    },
+    {
+      "test": "test_close_your_eyes_for_100",
+      "input": "00100",
+      "expected": [
+        "close your eyes"
+      ]
+    }
+  ],
+  "contract_note": "The instructions state 1 through 31, and an enabled test explicitly specifies 00000 as an empty list. Beyond that zero case, behavior for malformed strings, non-string values, and values outside the stated range is unspecified."
+}

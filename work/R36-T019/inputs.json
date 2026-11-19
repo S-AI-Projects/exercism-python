@@ -1,0 +1,29 @@
+{
+  "runner": "tools/course_checks/r36-t019.py",
+  "learner": "exercises/practice/house/house.py",
+  "reference_command": [
+    "python3",
+    "tools/course_checks/r36-t019.py",
+    "--python",
+    "work/R36-T019/.venv/bin/python"
+  ],
+  "failure_command": [
+    "python3",
+    "tools/course_checks/r36-t019.py",
+    "--python",
+    "work/R36-T019/.venv/bin/python",
+    "--reference",
+    "<temporary bad_reference.py>"
+  ],
+  "zero_test_command": [
+    "python3",
+    "tools/course_checks/r36-t019.py",
+    "--python",
+    "work/R36-T019/.venv/bin/python",
+    "--",
+    "-k",
+    "definitely_no_house_case_matches"
+  ],
+  "expected_cases": 14,
+  "bad_reference_source": "def recite(start_verse, end_verse): return []"
+}

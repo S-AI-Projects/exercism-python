@@ -1,0 +1,48 @@
+{
+  "reference_evaluation_returncode": 0,
+  "selected_results": [
+    {
+      "test": "test_wink_for_1",
+      "input": "00001",
+      "expected": [
+        "wink"
+      ],
+      "actual": [
+        "wink"
+      ],
+      "passed": true
+    },
+    {
+      "test": "test_double_blink_for_10",
+      "input": "00010",
+      "expected": [
+        "double blink"
+      ],
+      "actual": [
+        "double blink"
+      ],
+      "passed": true
+    },
+    {
+      "test": "test_close_your_eyes_for_100",
+      "input": "00100",
+      "expected": [
+        "close your eyes"
+      ],
+      "actual": [
+        "close your eyes"
+      ],
+      "passed": true
+    }
+  ],
+  "pytest_command": [
+    "/tmp/r36-t020-env/bin/python3",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "pytest_returncode": 0,
+  "executed_cases": 11,
+  "expected_cases": 11,
+  "errors": []
+}

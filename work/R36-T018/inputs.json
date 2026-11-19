@@ -1,0 +1,43 @@
+{
+  "exercise": "exercises/practice/nth-prime",
+  "config": "exercises/practice/nth-prime/.meta/config.json",
+  "files": {
+    "solution": [
+      "nth_prime.py"
+    ],
+    "test": [
+      "nth_prime_test.py"
+    ],
+    "example": [
+      ".meta/example.py"
+    ]
+  },
+  "resolved_inside_exercise": {
+    "solution": [
+      "nth_prime.py"
+    ],
+    "test": [
+      "nth_prime_test.py"
+    ],
+    "example": [
+      ".meta/example.py"
+    ]
+  },
+  "editor_role_declared": false,
+  "required_cases": [
+    "test_first_prime",
+    "test_second_prime",
+    "test_sixth_prime"
+  ],
+  "named_case_inputs": {
+    "test_first_prime": "prime(1)",
+    "test_second_prime": "prime(2)",
+    "test_sixth_prime": "prime(6)"
+  },
+  "pytest_command": [
+    "python3",
+    "-m",
+    "pytest",
+    "-q"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "exercise": "exercises/practice/hexadecimal",
+  "paths_from_config": {
+    "solution": "exercises/practice/hexadecimal/hexadecimal.py",
+    "test": "exercises/practice/hexadecimal/hexadecimal_test.py",
+    "example": "exercises/practice/hexadecimal/.meta/example.py"
+  },
+  "micro_example_inputs": {
+    "digits": [
+      1,
+      10,
+      15
+    ],
+    "empty_digits": []
+  },
+  "required_test_cases": [
+    "test_valid_hexa1",
+    "test_valid_hexa2",
+    "test_valid_hexa3"
+  ],
+  "learner_solution": "def hexa(hex_string):\\n    pass"
+}

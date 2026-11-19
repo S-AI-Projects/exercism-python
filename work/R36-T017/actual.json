@@ -1,0 +1,23 @@
+{
+  "micro_example_returncode": 0,
+  "micro_example_stdout_lines": [
+    "431",
+    "0",
+    "TypeError without initializer"
+  ],
+  "micro_example_stderr": "",
+  "reference_pytest_collect_returncode": 0,
+  "reference_pytest_collect_stdout": "hexadecimal_test.py::HexadecimalTest::test_invalid_hexa\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa1\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa2\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa3\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa4\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa5\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa6\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa7\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa8\nhexadecimal_test.py::HexadecimalTest::test_valid_hexa9\n\n10 tests collected in 0.00s\n",
+  "reference_pytest_collect_stderr": "",
+  "reference_pytest_returncode": 0,
+  "reference_pytest_stdout": "..........                                                               [100%]\n10 passed in 0.00s\n",
+  "reference_pytest_stderr": "",
+  "collected_case_count": 10,
+  "executed_case_count": 10,
+  "required_cases_collected": [
+    "test_valid_hexa1",
+    "test_valid_hexa2",
+    "test_valid_hexa3"
+  ],
+  "learner_solution_remains_unsolved": true
+}

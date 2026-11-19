@@ -1,0 +1,7 @@
+{
+  "python": "3.13.5",
+  "platform": "darwin",
+  "pytest": "pytest 8.4.2",
+  "pytest-subtests": "0.14.2",
+  "configlet": "not used; the config was unchanged"
+}

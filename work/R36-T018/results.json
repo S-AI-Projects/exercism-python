@@ -1,0 +1,51 @@
+{
+  "expected": {
+    "pytest_return_code": 0,
+    "executed_tests": 6,
+    "invalid_fixtures_rejected": 3
+  },
+  "actual": {
+    "pytest_return_code": 0,
+    "executed_tests": 6,
+    "named_case_results": {
+      "test_first_prime": {
+        "input": "prime(1)",
+        "expected": 2,
+        "actual": 2,
+        "passed": true
+      },
+      "test_second_prime": {
+        "input": "prime(2)",
+        "expected": 3,
+        "actual": 3,
+        "passed": true
+      },
+      "test_sixth_prime": {
+        "input": "prime(6)",
+        "expected": 13,
+        "actual": 13,
+        "passed": true
+      }
+    },
+    "invalid_fixtures": [
+      {
+        "fixture": "missing-reference",
+        "expected": "file does not exist",
+        "actual": "files.example file does not exist: .meta/absent_reference.py",
+        "passed": true
+      },
+      {
+        "fixture": "missing-test",
+        "expected": "file does not exist",
+        "actual": "files.test file does not exist: absent_test.py",
+        "passed": true
+      },
+      {
+        "fixture": "outside-exercise",
+        "expected": "escapes exercise",
+        "actual": "files.example path escapes exercise: ../outside.py",
+        "passed": true
+      }
+    ]
+  }
+}

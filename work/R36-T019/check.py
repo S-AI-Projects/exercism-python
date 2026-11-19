@@ -11,7 +11,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 RUNNER = ROOT / "tools/course_checks/r36-t019.py"
-PYTHON = Path(__file__).resolve().parent / ".venv/bin/python"
+VENV_PYTHON = Path(__file__).resolve().parent / ".venv/bin/python"
+PYTHON = VENV_PYTHON if VENV_PYTHON.exists() else Path(sys.executable)
 LEARNER = ROOT / "exercises/practice/house/house.py"
 EVIDENCE = Path(__file__).resolve().parent
 

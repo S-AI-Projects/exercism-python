@@ -2,6 +2,9 @@ import threading
 
 
 class BankAccount:
+    # Balance operations use a fixed number of lock operations and a fixed number
+    # of attribute checks/updates per call; O(1) assumes bounded-size Python ints.
+    # The account stores one balance, so space is O(1), excluding int bit growth.
     def __init__(self):
         self.is_open = False
         self.balance = None

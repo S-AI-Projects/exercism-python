@@ -1,0 +1,87 @@
+{
+  "input": {
+    "exercise": "exercises/practice/bank-account",
+    "solution_under_test": "temporary copy/bank_account.py",
+    "reference_source": "temporary copy/.meta/example.py",
+    "copy_includes_dotfiles": true,
+    "command": "python3 -m pytest -q",
+    "timed_input": "deposit 1-unit transactions; setup/open excluded from timer",
+    "timing_method": "perf_counter_ns; 7 repetitions of batches of 1000 independent histories per size"
+  },
+  "expected": {
+    "enabled_cases": 16,
+    "minimum_cases": 1,
+    "return_code": 0
+  },
+  "actual": {
+    "executed_cases": 16,
+    "return_code": 0
+  },
+  "timings": [
+    {
+      "deposit_transactions_per_history": 1,
+      "history_amounts": [
+        1
+      ],
+      "expected_balance": 1,
+      "actual_balance_before_timing": 1,
+      "repetitions": 7,
+      "batch_histories_per_repetition": 1000,
+      "sample_ns_per_history": [
+        89.7,
+        94.5,
+        1042.8,
+        97.3,
+        100.9,
+        95.9,
+        96.6
+      ],
+      "median_ns_per_history": 96.6
+    },
+    {
+      "deposit_transactions_per_history": 2,
+      "history_amounts": [
+        1,
+        1
+      ],
+      "expected_balance": 2,
+      "actual_balance_before_timing": 2,
+      "repetitions": 7,
+      "batch_histories_per_repetition": 1000,
+      "sample_ns_per_history": [
+        190.2,
+        197.4,
+        171.1,
+        173.5,
+        168.3,
+        171.6,
+        170.0
+      ],
+      "median_ns_per_history": 171.6
+    },
+    {
+      "deposit_transactions_per_history": 5,
+      "history_amounts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_balance": 5,
+      "actual_balance_before_timing": 5,
+      "repetitions": 7,
+      "batch_histories_per_repetition": 1000,
+      "sample_ns_per_history": [
+        430.8,
+        408.3,
+        418.6,
+        401.0,
+        413.0,
+        407.8,
+        418.9
+      ],
+      "median_ns_per_history": 413.0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "python": "3.13.5",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "pytest": "pytest 9.2.0"
+}

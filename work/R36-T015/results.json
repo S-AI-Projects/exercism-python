@@ -28,15 +28,15 @@
       "repetitions": 7,
       "batch_histories_per_repetition": 1000,
       "sample_ns_per_history": [
-        85.5,
-        88.1,
-        899.3,
-        92.2,
-        87.6,
-        87.6,
-        91.3
+        89.7,
+        94.5,
+        1042.8,
+        97.3,
+        100.9,
+        95.9,
+        96.6
       ],
-      "median_ns_per_history": 88.1
+      "median_ns_per_history": 96.6
     },
     {
       "deposit_transactions_per_history": 2,
@@ -49,15 +49,15 @@
       "repetitions": 7,
       "batch_histories_per_repetition": 1000,
       "sample_ns_per_history": [
-        168.6,
-        166.7,
-        171.8,
-        167.4,
-        171.0,
+        190.2,
+        197.4,
         171.1,
-        169.1
+        173.5,
+        168.3,
+        171.6,
+        170.0
       ],
-      "median_ns_per_history": 169.1
+      "median_ns_per_history": 171.6
     },
     {
       "deposit_transactions_per_history": 5,
@@ -73,15 +73,15 @@
       "repetitions": 7,
       "batch_histories_per_repetition": 1000,
       "sample_ns_per_history": [
-        428.7,
-        385.9,
-        396.6,
-        390.5,
-        395.0,
-        393.4,
-        390.1
+        430.8,
+        408.3,
+        418.6,
+        401.0,
+        413.0,
+        407.8,
+        418.9
       ],
-      "median_ns_per_history": 393.4
+      "median_ns_per_history": 413.0
     }
   ]
 }

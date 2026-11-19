@@ -8,11 +8,11 @@ For this exercise, input size is the number of deposit transactions in one accou
 
 The named canonical cases exercise these histories:
 
-| Test case | Deposit input size | Account calls |
+| Test case | Deposits in history | Account calls |
 | --- | ---: | --- |
-| `test_newly_opened_account_has_zero_balance` | 2 | `open`, `get_balance` |
-| `test_single_deposit` | 3 | `open`, `deposit`, `get_balance` |
-| `test_multiple_deposits` | 4 | `open`, `deposit`, `deposit`, `get_balance` |
+| `test_newly_opened_account_has_zero_balance` | 0 | `open`, `get_balance` |
+| `test_single_deposit` | 1 | `open`, `deposit`, `get_balance` |
+| `test_multiple_deposits` | 2 | `open`, `deposit`, `deposit`, `get_balance` |
 
 Across all 16 enabled canonical cases, the longest history contains 7 method calls (`test_can_do_multiple_operations_sequentially`); this describes the test corpus, not a limit on valid histories. For an n-transaction history with bounded-size integer balances, algorithm work is Θ(n): each deposit performs a fixed number of checks and attribute accesses plus one lock acquire/release. Lock wait can depend on contention. The account stores no transaction history, so its auxiliary state is O(1), excluding the bit length of the balance. Python integer arithmetic can take time proportional to the integer's digit count as balances grow.
 
@@ -22,9 +22,9 @@ The check used Python 3.13.5, pytest 9.2.0, and macOS 27.2.1 on arm64. For each 
 
 | Deposits per history | Amounts | Expected/actual balance | Repetitions × histories | Median ns/history |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | `[1]` | 1 / 1 | 7 × 1,000 | 88.1 |
-| 2 | `[1, 1]` | 2 / 2 | 7 × 1,000 | 169.1 |
-| 5 | `[1, 1, 1, 1, 1]` | 5 / 5 | 7 × 1,000 | 393.4 |
+| 1 | `[1]` | 1 / 1 | 7 × 1,000 | 96.6 |
+| 2 | `[1, 1]` | 2 / 2 | 7 × 1,000 | 171.6 |
+| 5 | `[1, 1, 1, 1, 1]` | 5 / 5 | 7 × 1,000 | 413.0 |
 
 ## Cost conclusion and limits
 

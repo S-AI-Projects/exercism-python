@@ -1,0 +1,14 @@
+{
+  "exercise": "exercises/practice/pov",
+  "config": "exercises/practice/pov/.meta/config.json",
+  "solution_file_from_config": "pov.py",
+  "test_file_from_config": "pov_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "expected_test_methods": 15,
+  "rejecting_test_case": "test_can_reroot_a_tree_with_a_parent_and_one_sibling",
+  "mutation": {
+    "target": "stack.append(child.add(tree.remove(child.label)))",
+    "replacement": "stack.append(child.add(tree))"
+  },
+  "learner_solution_sha256_before": "ed7eba5f0b64b69a0a1904dc338ce39039b5de3ea2aa74019d8d494ca46b11ba"
+}

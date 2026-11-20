@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/private/tmp/r36-t011-venv/bin/python3",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "child_returncode": 0,
+  "canonical_entries_before": 16,
+  "excluded_entries_before": 0,
+  "canonical_entries_after": 16,
+  "excluded_entries_after": 0,
+  "test_methods_expected": 13,
+  "tests_executed_actual": 13,
+  "learner_solution_sha256_before": "ee9128807b278a39a851ee4df53479dec6d5da7dbb066a86fac810c8f28ba285",
+  "learner_solution_sha256_after": "ee9128807b278a39a851ee4df53479dec6d5da7dbb066a86fac810c8f28ba285",
+  "failures": [],
+  "status": "passed"
+}

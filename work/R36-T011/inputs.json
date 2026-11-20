@@ -1,0 +1,17 @@
+{
+  "exercise": "exercises/practice/tree-building",
+  "config": "exercises/practice/tree-building/.meta/config.json",
+  "solution_file_from_config": "tree_building.py",
+  "test_file_from_config": "tree_building_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "reference_copy_target": "tree_building.py",
+  "canonical_entries": 16,
+  "excluded_entries": 0,
+  "expected_test_methods": 13,
+  "reviewed_uuid_to_test": {
+    "761790a3-4c27-461a-b4e9-8bce8ccee5a1": "test_empty_list_input",
+    "dcc89dc3-eb39-4f26-a3cd-964e607c95ff": "test_one_node",
+    "dcdb80f0-e5da-43e1-8b8d-6f307be89c0e": "test_three_nodes_in_order"
+  },
+  "learner_solution_sha256_before": "ee9128807b278a39a851ee4df53479dec6d5da7dbb066a86fac810c8f28ba285"
+}

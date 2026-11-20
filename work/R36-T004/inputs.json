@@ -1,0 +1,15 @@
+{
+  "exercise": "exercises/practice/largest-series-product",
+  "config": "exercises/practice/largest-series-product/.meta/config.json",
+  "solution_file_from_config": "largest_series_product.py",
+  "test_file_from_config": "largest_series_product_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "expected_test_methods": 14,
+  "named_cases": [
+    "test_finds_the_largest_product_if_span_equals_length",
+    "test_can_find_the_largest_product_of_2_with_numbers_in_order",
+    "test_can_find_the_largest_product_of_2"
+  ],
+  "refactor_description": "Simplified condition checks and extracted slice window calculation with clear invariant comment.",
+  "learner_solution_sha256_before": "7adb51ea48fb676a351409815f9b5cfce831fcf3d8de693cfadbaa7c004c6638"
+}

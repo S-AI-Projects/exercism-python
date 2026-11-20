@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/parishi/Downloads/SnAi /.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "child_returncode": 0,
+  "canonical_entries_before": 13,
+  "excluded_entries_before": 0,
+  "canonical_entries_after": 13,
+  "excluded_entries_after": 0,
+  "test_methods_expected": 13,
+  "tests_executed_actual": 13,
+  "learner_solution_sha256_before": "2c5c9671348bd9f5e253f33bc4306e0f62851016a0d5bac839553e65a1952057",
+  "learner_solution_sha256_after": "2c5c9671348bd9f5e253f33bc4306e0f62851016a0d5bac839553e65a1952057",
+  "failures": [],
+  "status": "passed"
+}

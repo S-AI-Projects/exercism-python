@@ -1,0 +1,17 @@
+{
+  "exercise": "exercises/practice/palindrome-products",
+  "config": "exercises/practice/palindrome-products/.meta/config.json",
+  "solution_file_from_config": "palindrome_products.py",
+  "test_file_from_config": "palindrome_products_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "reference_copy_target": "palindrome_products.py",
+  "canonical_entries": 13,
+  "excluded_entries": 0,
+  "expected_test_methods": 13,
+  "reviewed_uuid_to_test": {
+    "5cff78fe-cf02-459d-85c2-ce584679f887": "test_find_the_smallest_palindrome_from_single_digit_factors",
+    "0853f82c-5fc4-44ae-be38-fadb2cced92d": "test_find_the_largest_palindrome_from_single_digit_factors",
+    "66c3b496-bdec-4103-9129-3fcb5a9063e1": "test_find_the_smallest_palindrome_from_double_digit_factors"
+  },
+  "learner_solution_sha256_before": "2c5c9671348bd9f5e253f33bc4306e0f62851016a0d5bac839553e65a1952057"
+}

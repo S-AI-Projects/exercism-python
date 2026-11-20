@@ -1,0 +1,13 @@
+{
+  "exercise": "exercises/practice/rna-transcription",
+  "spec_path": "/Users/parishi/Downloads/SnAi /.problem-specifications",
+  "focused_cases_found": [
+    "test_empty_rna_sequence",
+    "test_rna_complement_of_cytosine_is_guanine",
+    "test_rna_complement_of_guanine_is_cytosine"
+  ],
+  "total_methods_found": 6,
+  "generations_reproducible": true,
+  "status": "passed",
+  "failures": []
+}

@@ -1,0 +1,19 @@
+{
+  "exercise": "exercises/practice/dnd-character",
+  "config": "exercises/practice/dnd-character/.meta/config.json",
+  "solution_file_from_config": "dnd_character.py",
+  "test_file_from_config": "dnd_character_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "expected_test_methods": 19,
+  "named_cases": [
+    "test_ability_modifier_for_score_3_is_n4",
+    "test_ability_modifier_for_score_4_is_n3",
+    "test_ability_modifier_for_score_5_is_n3"
+  ],
+  "construct": "math.floor (floor division towards negative infinity)",
+  "micro_example_inputs": [
+    3,
+    5
+  ],
+  "learner_solution_sha256_before": "34ba86cdf1972ec6dcfd8ae1c8b1978e6187c8fad35a40ee446bd35b332c3d27"
+}

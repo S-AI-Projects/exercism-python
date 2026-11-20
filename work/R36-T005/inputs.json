@@ -1,0 +1,51 @@
+{
+  "exercise": "exercises/practice/killer-sudoku-helper",
+  "config": "exercises/practice/killer-sudoku-helper/.meta/config.json",
+  "solution_file_from_config": "killer_sudoku_helper.py",
+  "test_file_from_config": "killer_sudoku_helper_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "expected_test_methods": 13,
+  "benchmark_cases": [
+    {
+      "target": 1,
+      "size": 1,
+      "exclude": [],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "target": 7,
+      "size": 3,
+      "exclude": [],
+      "expected": [
+        [
+          1,
+          2,
+          4
+        ]
+      ]
+    },
+    {
+      "target": 45,
+      "size": 9,
+      "exclude": [],
+      "expected": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ]
+    }
+  ],
+  "learner_solution_sha256_before": "4ca2384941dde6517c4549a0a2aa087a973b1e742f847bd231e96d9b1da95cb0"
+}

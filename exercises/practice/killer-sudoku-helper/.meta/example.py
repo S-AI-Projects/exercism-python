@@ -1,5 +1,10 @@
 import itertools
 
+
+# Complexity: For cage size `s` and candidates `n = len(possible)` <= 9,
+# itertools.combinations examines C(n, k) tuples as k decreases from n to 1.
+# Since n <= 9, the total search space is strictly bounded by sum_{k=1}^n C(n, k) <= 2^9 - 1 = 511
+# candidate combinations, yielding O(2^|D|) bounded algorithm work and O(|D|) space for fixed Sudoku cages.
 def combinations(target, size, exclude):
     result = []
     possible = [index for index in

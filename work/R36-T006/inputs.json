@@ -1,0 +1,18 @@
+{
+  "exercise": "exercises/practice/sieve",
+  "config": "exercises/practice/sieve/.meta/config.json",
+  "solution_file_from_config": "sieve.py",
+  "test_file_from_config": "sieve_test.py",
+  "example_file_from_config": ".meta/example.py",
+  "expected_test_methods": 5,
+  "named_cases": [
+    "test_no_primes_under_two",
+    "test_find_first_prime",
+    "test_find_primes_up_to_10"
+  ],
+  "approaches": [
+    "Reference: Boolean array direct indexing",
+    "Alternative: Set-based composite filtering"
+  ],
+  "learner_solution_sha256_before": "9436c427e83570fc4d8565889551351efdc043c0301c655ba0dbfa85d8a500b3"
+}

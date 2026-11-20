@@ -11,12 +11,15 @@
 
 [5cff78fe-cf02-459d-85c2-ce584679f887]
 description = "find the smallest palindrome from single digit factors"
+comment = "Covered by test_find_the_smallest_palindrome_from_single_digit_factors: smallest() searches palindromes from min_factor**2 ascending; factor pair (1, 1) satisfies 1 <= factor <= 9 returning (1, [[1, 1]])."
 
 [0853f82c-5fc4-44ae-be38-fadb2cced92d]
 description = "find the largest palindrome from single digit factors"
+comment = "Covered by test_find_the_largest_palindrome_from_single_digit_factors: largest() searches palindromes from max_factor**2 descending; palindrome 9 yields valid factor pairs [[1, 9], [3, 3]] within [1, 9]."
 
 [66c3b496-bdec-4103-9129-3fcb5a9063e1]
 description = "find the smallest palindrome from double digit factors"
+comment = "Covered by test_find_the_smallest_palindrome_from_double_digit_factors: smallest() searches palindromes from 100 ascending; 121 is the first palindrome with factor pair (11, 11) within [10, 99]."
 
 [a10682ae-530a-4e56-b89d-69664feafe53]
 description = "find the largest palindrome from double digit factors"

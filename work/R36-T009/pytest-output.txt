@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0 -- /Users/smer/SNAI ASSIGNMENT/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_
+collecting ... collected 7 items
+
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_a_capitalized_word PASSED [ 14%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_a_palindrome PASSED [ 28%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_a_sentence_with_punctuation PASSED [ 42%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_a_word PASSED [ 57%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_an_empty_string PASSED [ 71%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_an_even_sized_word PASSED [ 85%]
+../../../../var/folders/j1/b3xs9x094797ngn7dsgs65s40000gn/T/reverse_string_test__8xdchg_/reverse_string_test.py::ReverseStringTest::test_wide_characters PASSED [100%]
+
+============================== 7 passed in 0.01s ===============================
+
+PASS: 7 tests executed in isolation; learner stub unchanged.

@@ -1,0 +1,30 @@
+{
+  "task_id": "R36-T010",
+  "exercise": "complex-numbers",
+  "hints_file": "exercises/practice/complex-numbers/.docs/hints.md",
+  "named_cases": [
+    "test_real_part_of_a_purely_real_number",
+    "test_real_part_of_a_purely_imaginary_number",
+    "test_real_part_of_a_number_with_real_and_imaginary_part"
+  ],
+  "decision_table": [
+    {
+      "name": "test_real_part_of_a_purely_real_number",
+      "input": "(1, 0)",
+      "expected": "1"
+    },
+    {
+      "name": "test_real_part_of_a_purely_imaginary_number",
+      "input": "(0, 1)",
+      "expected": "0"
+    },
+    {
+      "name": "test_real_part_of_a_number_with_real_and_imaginary_part",
+      "input": "(1, 2)",
+      "expected": "1"
+    }
+  ],
+  "expected_test_count": 43,
+  "learner_file": "exercises/practice/complex-numbers/complex_numbers.py",
+  "learner_sha256": "dfe924fe11fa4b184923c1f7c1aa684ca7dcd7515311fa828cb03170df358b46"
+}

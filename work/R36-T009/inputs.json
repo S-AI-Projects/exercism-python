@@ -1,0 +1,14 @@
+{
+  "task_id": "R36-T009",
+  "exercise": "reverse-string",
+  "runner_script": "tools/course_checks/r36-t009.py",
+  "documentation": "docs/maintenance/reverse-string.md",
+  "named_cases": [
+    "test_an_empty_string",
+    "test_a_word",
+    "test_a_capitalized_word"
+  ],
+  "expected_test_count": 7,
+  "learner_file": "exercises/practice/reverse-string/reverse_string.py",
+  "learner_sha256": "5bc26dc9f0d0f2b775dbac358c48a160e16ab1ddda2f584dcd7940f08803024a"
+}

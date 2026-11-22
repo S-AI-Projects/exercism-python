@@ -1,0 +1,30 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "example": {
+    "expected_stdout": "[1, 4, 9]\n[1, 2, 3]",
+    "actual_stdout": "[1, 4, 9]\n[1, 2, 3]",
+    "exit_status": 0
+  },
+  "test_command": [
+    "/private/tmp/tanish-r36-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "expected_cases": 6,
+  "actual_cases": 6,
+  "test_exit_status": 0,
+  "test_output": "......                                                                   [100%]\n6 passed in 0.01s",
+  "anchors": [
+    "test_empty_sequence",
+    "test_pow",
+    "test_divmod"
+  ],
+  "learner_solution_sha256_before_after": [
+    "9c5c28bc0d55ee12e3aff76dff07e025f202d386f99196761d0df2c67a95708c",
+    "9c5c28bc0d55ee12e3aff76dff07e025f202d386f99196761d0df2c67a95708c"
+  ]
+}

@@ -1,0 +1,56 @@
+Task R36-T026 Automated Check & Approach Comparison Report
+=================================================================
+
+Exercise: exercises/practice/roman-numerals
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Approaches Evaluated:
+  1. Maintained Reference: Greedy Subtraction Loop (loop-over-romans)
+     - Pytest exit code: 0
+     - Executed cases: 27/27 passed
+  2. Alternative: Positional Table Lookup (table-lookup)
+     - Pytest exit code: 0
+     - Executed cases: 27/27 passed
+
+Named Anchor Cases Status:
+  - test_1_is_i: Reference=PASSED, Alternative=PASSED
+  - test_2_is_ii: Reference=PASSED, Alternative=PASSED
+  - test_3_is_iii: Reference=PASSED, Alternative=PASSED
+
+Output Parity Across All 27 Cases: 100% IDENTICAL MATCH
+  - test_1_is_i (1): 'I' [MATCH]
+  - test_2_is_ii (2): 'II' [MATCH]
+  - test_3_is_iii (3): 'III' [MATCH]
+  - test_4_is_iv (4): 'IV' [MATCH]
+  - test_5_is_v (5): 'V' [MATCH]
+  - test_6_is_vi (6): 'VI' [MATCH]
+  - test_9_is_ix (9): 'IX' [MATCH]
+  - test_16_is_xvi (16): 'XVI' [MATCH]
+  - test_27_is_xxvii (27): 'XXVII' [MATCH]
+  - test_48_is_xlviii (48): 'XLVIII' [MATCH]
+  - test_49_is_xlix (49): 'XLIX' [MATCH]
+  - test_59_is_lix (59): 'LIX' [MATCH]
+  - test_66_is_lxvi (66): 'LXVI' [MATCH]
+  - test_93_is_xciii (93): 'XCIII' [MATCH]
+  - test_141_is_cxli (141): 'CXLI' [MATCH]
+  - test_163_is_clxiii (163): 'CLXIII' [MATCH]
+  - test_166_is_clxvi (166): 'CLXVI' [MATCH]
+  - test_402_is_cdii (402): 'CDII' [MATCH]
+  - test_575_is_dlxxv (575): 'DLXXV' [MATCH]
+  - test_666_is_dclxvi (666): 'DCLXVI' [MATCH]
+  - test_911_is_cmxi (911): 'CMXI' [MATCH]
+  - test_1024_is_mxxiv (1024): 'MXXIV' [MATCH]
+  - test_1666_is_mdclxvi (1666): 'MDCLXVI' [MATCH]
+  - test_3000_is_mmm (3000): 'MMM' [MATCH]
+  - test_3001_is_mmmi (3001): 'MMMI' [MATCH]
+  - test_3888_is_mmmdccclxxxviii (3888): 'MMMDCCCLXXXVIII' [MATCH]
+  - test_3999_is_mmmcmxcix (3999): 'MMMCMXCIX' [MATCH]
+
+Learner Solution Stub Verification:
+  Path: roman_numerals.py
+  Unsolved stub preserved: PASS
+
+All checks and approach comparisons passed successfully.

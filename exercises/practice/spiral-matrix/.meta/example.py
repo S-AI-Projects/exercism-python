@@ -1,16 +1,22 @@
 def spiral_matrix(size):
-    matrix = [[0]*size for row in range(size)]
-    idx = 0
-    jdx = -1
+    matrix = [[0] * size for _ in range(size)]
+    row = 0
+    col = -1
     element = 1
 
-    digital = [0, 1, 0, -1]
-    disco = [1, 0, -1, 0]
+    # Direction vectors for traversing East (right), South (down), West (left), North (up)
+    row_deltas = [0, 1, 0, -1]
+    col_deltas = [1, 0, -1, 0]
 
-    for edx in range(2*size - 1):
-        for _ in range((2*size - edx) // 2):
-            idx += digital[edx % 4]
-            jdx += disco[edx % 4]
-            matrix[idx][jdx] = element
+    # A spiral matrix traverses 2 * size - 1 directional segments.
+    # Invariant: Step lengths decrease by 1 every two segments: size, size-1, size-1, size-2, size-2...
+    # The formula (2 * size - segment_index) // 2 computes the exact step count for each segment.
+    for segment_index in range(2 * size - 1):
+        segment_steps = (2 * size - segment_index) // 2
+        for _ in range(segment_steps):
+            row += row_deltas[segment_index % 4]
+            col += col_deltas[segment_index % 4]
+            matrix[row][col] = element
             element += 1
+
     return matrix

@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-11-22T15:04:38.236971+00:00",
+  "task": "R36-T030",
+  "exercise": "exercises/practice/acronym",
+  "system_info": {
+    "python_version": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest_version": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "learner_stub": {
+    "path": "exercises/practice/acronym/acronym.py",
+    "initial_sha256": "2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d",
+    "after_mode1_sha256": "2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d",
+    "after_mode2_sha256": "2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d",
+    "after_mode3_sha256": "2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d",
+    "hash_identical_across_all_runs": true,
+    "unsolved": true
+  },
+  "decision_table": {
+    "rows_count": 7,
+    "records": [
+      {
+        "pattern": "Standard capitalized words",
+        "delimiter_rule": "Single space splits words",
+        "input": "Portable Network Graphics",
+        "expected_output": "PNG",
+        "actual_reference_output": "PNG",
+        "match": true
+      },
+      {
+        "pattern": "Mixed casing with lowercase",
+        "delimiter_rule": "Single space splits words",
+        "input": "Ruby on Rails",
+        "expected_output": "ROR",
+        "actual_reference_output": "ROR",
+        "match": true
+      },
+      {
+        "pattern": "Trailing word punctuation",
+        "delimiter_rule": "Space splits words",
+        "input": "First In, First Out",
+        "expected_output": "FIFO",
+        "actual_reference_output": "FIFO",
+        "match": true
+      },
+      {
+        "pattern": "Hyphenated compound words",
+        "delimiter_rule": "Hyphen (`-`) treated as word delimiter",
+        "input": "Complementary metal-oxide semiconductor",
+        "expected_output": "CMOS",
+        "actual_reference_output": "CMOS",
+        "match": true
+      },
+      {
+        "pattern": "Consecutive / mixed delimiters",
+        "delimiter_rule": "Delimiters collapsed without empty words",
+        "input": "Something - I made up from thin air",
+        "expected_output": "SIMUFTA",
+        "actual_reference_output": "SIMUFTA",
+        "match": true
+      },
+      {
+        "pattern": "Apostrophe inside word",
+        "delimiter_rule": "Word kept intact",
+        "input": "Halley's Comet",
+        "expected_output": "HC",
+        "actual_reference_output": "HC",
+        "match": true
+      },
+      {
+        "pattern": "Underscore emphasis",
+        "delimiter_rule": "Space splits words",
+        "input": "The Road _Not_ Taken",
+        "expected_output": "TRNT",
+        "actual_reference_output": "TRNT",
+        "match": true
+      }
+    ],
+    "anchors_verified": [
+      "Portable Network Graphics",
+      "Ruby on Rails",
+      "First In, First Out"
+    ],
+    "all_entries_matched": true
+  },
+  "modes": {
+    "mode1_real_reference": {
+      "description": "Maintained reference solution tested against full test suite",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "child_returncode": 0,
+      "total_executed": 9,
+      "passed": 9,
+      "failed": 0,
+      "named_anchor_cases": {
+        "test_basic": "PASSED",
+        "test_lowercase_words": "PASSED",
+        "test_punctuation": "PASSED"
+      },
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    },
+    "mode2_failing_reference": {
+      "description": "Deliberately failing reference solution",
+      "expected_exit_code": "non-zero (> 0)",
+      "actual_exit_code": 1,
+      "child_returncode": 1,
+      "total_executed": 9,
+      "passed": 0,
+      "failed": 9,
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    },
+    "mode3_zero_tests": {
+      "description": "Zero-test execution via filtering",
+      "expected_exit_code": "non-zero (> 0)",
+      "actual_exit_code": 5,
+      "child_returncode": 5,
+      "total_executed": 0,
+      "deselected": 9,
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    }
+  },
+  "overall_status": "PASSED"
+}

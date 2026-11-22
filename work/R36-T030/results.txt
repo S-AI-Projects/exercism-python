@@ -1,0 +1,59 @@
+Task R36-T030 Verification Results
+==================================
+Date/Time: 2026-11-22T15:04:38.236971+00:00
+Exercise: exercises/practice/acronym
+Python: 3.14.7
+Pytest: pytest 8.4.2
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Overall Status: PASSED
+
+Learner Stub Integrity:
+-----------------------
+File: exercises/practice/acronym/acronym.py
+Status: Strictly Unsolved (signature + pass)
+Initial SHA-256: 2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d
+After Mode 1:    2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d
+After Mode 2:    2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d
+After Mode 3:    2f8a38c467eb2d913cfcf15ec7f334cd5ba84dae4be24512fc2fedcabdf1a38d
+All Hashes Match: True
+
+Decision Table Validation:
+--------------------------
+Rows Extracted: 7
+Anchor Cases Verified:
+  - "Portable Network Graphics" -> "PNG" (test_basic): MATCH
+  - "Ruby on Rails" -> "ROR" (test_lowercase_words): MATCH
+  - "First In, First Out" -> "FIFO" (test_punctuation): MATCH
+All 7 Decision Table Rows Matched: True
+
+Mode 1: Maintained Reference Execution
+--------------------------------------
+Exit Code: 0 (Expected: 0)
+Child Return Code: 0
+Executed Tests: 9 / 9
+Passed: 9
+Failed: 0
+Scratch Cleaned: True
+Named Cases:
+  - test_basic: PASSED
+  - test_lowercase_words: PASSED
+  - test_punctuation: PASSED
+
+Mode 2: Deliberately Failing Reference
+--------------------------------------
+Exit Code: 1 (Expected: non-zero)
+Child Return Code: 1
+Executed Tests: 9
+Passed: 0
+Failed: 9
+Scratch Cleaned: True
+Assertion Failure Detected & Propagated: True
+
+Mode 3: Zero-Test Selection (Filter)
+------------------------------------
+Exit Code: 5 (Expected: non-zero)
+Child Return Code: 5
+Executed Tests: 0
+Deselected Tests: 9
+Scratch Cleaned: True
+Zero-Test Run Detected & Rejected: True

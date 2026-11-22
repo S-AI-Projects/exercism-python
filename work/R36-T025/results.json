@@ -1,0 +1,265 @@
+{
+  "task_id": "R36-T025",
+  "exercise": "exercises/practice/high-scores",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/high-scores/.meta/config.json",
+    "solution_file": "high_scores.py",
+    "test_file": "high_scores_test.py",
+    "example_file": ".meta/example.py",
+    "maintenance_doc": "docs/maintenance/high-scores.md",
+    "canonical_cases": [
+      "test_list_of_scores",
+      "test_latest_score",
+      "test_personal_best",
+      "test_personal_top_three_from_a_list_of_scores",
+      "test_personal_top_highest_to_lowest",
+      "test_personal_top_when_there_is_a_tie",
+      "test_personal_top_when_there_are_less_than_3",
+      "test_personal_top_when_there_is_only_one",
+      "test_latest_score_after_personal_top_scores",
+      "test_scores_after_personal_top_scores",
+      "test_latest_score_after_personal_best",
+      "test_scores_after_personal_best"
+    ],
+    "baseline_cases": [
+      "test_list_of_scores",
+      "test_latest_score",
+      "test_personal_best"
+    ],
+    "benchmark_sizes": [
+      1,
+      4,
+      13
+    ],
+    "repetitions_per_size": 15
+  },
+  "counts": {
+    "total_canonical_cases": 12,
+    "executed_cases": 12,
+    "passed_cases": 12,
+    "failed_cases": 0,
+    "benchmark_sizes_evaluated": 3
+  },
+  "test_statuses": {
+    "test_list_of_scores": "PASSED",
+    "test_latest_score": "PASSED",
+    "test_personal_best": "PASSED",
+    "test_personal_top_three_from_a_list_of_scores": "PASSED",
+    "test_personal_top_highest_to_lowest": "PASSED",
+    "test_personal_top_when_there_is_a_tie": "PASSED",
+    "test_personal_top_when_there_are_less_than_3": "PASSED",
+    "test_personal_top_when_there_is_only_one": "PASSED",
+    "test_latest_score_after_personal_top_scores": "PASSED",
+    "test_scores_after_personal_top_scores": "PASSED",
+    "test_latest_score_after_personal_best": "PASSED",
+    "test_scores_after_personal_best": "PASSED"
+  },
+  "process_startup": {
+    "repetitions": 7,
+    "median_ns": 12574584,
+    "median_ms": 12.575,
+    "min_ns": 12212208,
+    "max_ns": 13200625
+  },
+  "benchmark_results": {
+    "size_1": {
+      "size": 1,
+      "input_scores": [
+        40
+      ],
+      "source": "test_personal_top_when_there_is_only_one",
+      "repetitions": 15,
+      "correctness_verified": true,
+      "init_ns": {
+        "median": 125,
+        "min": 83,
+        "max": 709
+      },
+      "latest_ns": {
+        "median": 83,
+        "min": 42,
+        "max": 459
+      },
+      "personal_best_ns": {
+        "median": 83,
+        "min": 83,
+        "max": 333
+      },
+      "personal_top_three_ns": {
+        "median": 125,
+        "min": 83,
+        "max": 584
+      },
+      "full_lifecycle_ns": {
+        "median": 250,
+        "min": 208,
+        "max": 542
+      }
+    },
+    "size_4": {
+      "size": 4,
+      "input_scores": [
+        30,
+        50,
+        20,
+        70
+      ],
+      "source": "test_list_of_scores",
+      "repetitions": 15,
+      "correctness_verified": true,
+      "init_ns": {
+        "median": 125,
+        "min": 83,
+        "max": 125
+      },
+      "latest_ns": {
+        "median": 83,
+        "min": 83,
+        "max": 84
+      },
+      "personal_best_ns": {
+        "median": 125,
+        "min": 83,
+        "max": 167
+      },
+      "personal_top_three_ns": {
+        "median": 208,
+        "min": 166,
+        "max": 250
+      },
+      "full_lifecycle_ns": {
+        "median": 333,
+        "min": 250,
+        "max": 375
+      }
+    },
+    "size_13": {
+      "size": 13,
+      "input_scores": [
+        10,
+        30,
+        90,
+        30,
+        100,
+        20,
+        10,
+        0,
+        30,
+        40,
+        40,
+        70,
+        70
+      ],
+      "source": "test_personal_top_three_from_a_list_of_scores",
+      "repetitions": 15,
+      "correctness_verified": true,
+      "init_ns": {
+        "median": 83,
+        "min": 83,
+        "max": 167
+      },
+      "latest_ns": {
+        "median": 83,
+        "min": 41,
+        "max": 125
+      },
+      "personal_best_ns": {
+        "median": 167,
+        "min": 125,
+        "max": 250
+      },
+      "personal_top_three_ns": {
+        "median": 291,
+        "min": 209,
+        "max": 417
+      },
+      "full_lifecycle_ns": {
+        "median": 500,
+        "min": 417,
+        "max": 625
+      }
+    }
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "child_return_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "executed_tests_count": {
+      "expected": 12,
+      "actual": 12,
+      "status": "PASS"
+    },
+    "baseline_cases_passed": {
+      "expected": {
+        "test_list_of_scores": "PASSED",
+        "test_latest_score": "PASSED",
+        "test_personal_best": "PASSED"
+      },
+      "actual": {
+        "test_list_of_scores": "PASSED",
+        "test_latest_score": "PASSED",
+        "test_personal_best": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "canonical_cases_passed": {
+      "expected": {
+        "test_list_of_scores": "PASSED",
+        "test_latest_score": "PASSED",
+        "test_personal_best": "PASSED",
+        "test_personal_top_three_from_a_list_of_scores": "PASSED",
+        "test_personal_top_highest_to_lowest": "PASSED",
+        "test_personal_top_when_there_is_a_tie": "PASSED",
+        "test_personal_top_when_there_are_less_than_3": "PASSED",
+        "test_personal_top_when_there_is_only_one": "PASSED",
+        "test_latest_score_after_personal_top_scores": "PASSED",
+        "test_scores_after_personal_top_scores": "PASSED",
+        "test_latest_score_after_personal_best": "PASSED",
+        "test_scores_after_personal_best": "PASSED"
+      },
+      "actual": {
+        "test_list_of_scores": "PASSED",
+        "test_latest_score": "PASSED",
+        "test_personal_best": "PASSED",
+        "test_personal_top_three_from_a_list_of_scores": "PASSED",
+        "test_personal_top_highest_to_lowest": "PASSED",
+        "test_personal_top_when_there_is_a_tie": "PASSED",
+        "test_personal_top_when_there_are_less_than_3": "PASSED",
+        "test_personal_top_when_there_is_only_one": "PASSED",
+        "test_latest_score_after_personal_top_scores": "PASSED",
+        "test_scores_after_personal_top_scores": "PASSED",
+        "test_latest_score_after_personal_best": "PASSED",
+        "test_scores_after_personal_best": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "all_benchmark_inputs_verified": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "algorithm_distinct_from_startup": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "working_tree_learner_stub_untouched": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "Verified all 12 canonical test cases pass in scratch copy; completed scaling benchmarks across valid domain sizes (1, 4, 13) with median timings cleanly separated from process startup. Learner stub remains strictly unsolved."
+}

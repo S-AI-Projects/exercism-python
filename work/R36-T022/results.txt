@@ -1,0 +1,31 @@
+Task R36-T022 Automated Check Verification Report
+==================================================
+
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Canonical Cases:
+  Total: 9
+  Included: 8
+  Excluded: 1
+
+Anchored Cases (3/3 Verified):
+  - test_age_on_earth: PASSED
+  - test_age_on_mercury: PASSED
+  - test_age_on_venus: PASSED
+
+Pytest Scratch Execution:
+  Exit code: 0
+  Executed cases: 8
+  Zero-test run: False
+
+Two-Generation Reproducibility:
+  Identical after timestamp normalization: PASS
+  No cases silently dropped: PASS (8/8 generated)
+
+Working Tree Learner Stub:
+  Unsolved stub preserved: PASS
+
+All checks passed successfully.

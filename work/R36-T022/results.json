@@ -1,0 +1,114 @@
+{
+  "task_id": "R36-T022",
+  "exercise": "exercises/practice/space-age",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/space-age/.meta/config.json",
+    "solution_file": "space_age.py",
+    "test_file": "space_age_test.py",
+    "example_file": ".meta/example.py",
+    "tests_toml_file": "exercises/practice/space-age/.meta/tests.toml",
+    "template_file": "exercises/practice/space-age/.meta/template.j2",
+    "macros_file": "config/generator_macros.j2",
+    "anchored_cases": [
+      "test_age_on_earth",
+      "test_age_on_mercury",
+      "test_age_on_venus"
+    ],
+    "enabled_cases": [
+      "test_age_on_earth",
+      "test_age_on_mercury",
+      "test_age_on_venus",
+      "test_age_on_mars",
+      "test_age_on_jupiter",
+      "test_age_on_saturn",
+      "test_age_on_uranus",
+      "test_age_on_neptune"
+    ],
+    "spec_path_used": "/tmp/problem-specifications"
+  },
+  "counts": {
+    "total_canonical_cases": 9,
+    "included": 8,
+    "excluded": 1,
+    "generated_tests_count": 8
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "child_return_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "zero_test_run": {
+      "expected": false,
+      "actual": false,
+      "status": "PASS"
+    },
+    "executed_test_count": {
+      "expected": 8,
+      "actual": 8,
+      "status": "PASS"
+    },
+    "anchored_cases_passed": {
+      "expected": {
+        "test_age_on_earth": "PASSED",
+        "test_age_on_mercury": "PASSED",
+        "test_age_on_venus": "PASSED"
+      },
+      "actual": {
+        "test_age_on_earth": "PASSED",
+        "test_age_on_mercury": "PASSED",
+        "test_age_on_venus": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "all_enabled_cases_passed": {
+      "expected": {
+        "test_age_on_earth": "PASSED",
+        "test_age_on_mercury": "PASSED",
+        "test_age_on_venus": "PASSED",
+        "test_age_on_mars": "PASSED",
+        "test_age_on_jupiter": "PASSED",
+        "test_age_on_saturn": "PASSED",
+        "test_age_on_uranus": "PASSED",
+        "test_age_on_neptune": "PASSED"
+      },
+      "actual": {
+        "test_age_on_earth": "PASSED",
+        "test_age_on_mercury": "PASSED",
+        "test_age_on_venus": "PASSED",
+        "test_age_on_mars": "PASSED",
+        "test_age_on_jupiter": "PASSED",
+        "test_age_on_saturn": "PASSED",
+        "test_age_on_uranus": "PASSED",
+        "test_age_on_neptune": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "two_generations_identical": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "no_silent_drop": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "working_tree_unchanged": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "All checks and assertions passed successfully."
+}

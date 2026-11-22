@@ -1,0 +1,90 @@
+{
+  "task_id": "R36-T023",
+  "exercise": "exercises/practice/linked-list",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/linked-list/.meta/config.json",
+    "solution_file": "linked_list.py",
+    "test_file": "linked_list_test.py",
+    "example_file": ".meta/example.py",
+    "hints_file": "exercises/practice/linked-list/.docs/hints.md",
+    "maintenance_doc": "docs/maintenance/linked-list.md",
+    "anchor_cases": [
+      "test_pop_gets_element_from_the_list",
+      "test_push_pop_respectively_add_remove_at_the_end_of_the_list",
+      "test_shift_gets_an_element_from_the_list"
+    ],
+    "rejecting_case": "test_push_pop_respectively_add_remove_at_the_end_of_the_list",
+    "rejecting_uuid": "c3f67e5d-cfa2-4c3e-a18f-7ce999c3c885",
+    "mutation": {
+      "original_line": "if node is None or node.prev is None:",
+      "mutated_line": "if node is None or node.succeeding is None:",
+      "description": "Mutated pop() boundary condition checking succeeding instead of prev"
+    }
+  },
+  "counts": {
+    "total_test_cases": 24,
+    "anchor_cases_count": 3
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "original_child_return_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "original_total_passed": {
+      "expected": 24,
+      "actual": 24,
+      "status": "PASS"
+    },
+    "original_anchors_status": {
+      "expected": {
+        "test_pop_gets_element_from_the_list": "PASSED",
+        "test_push_pop_respectively_add_remove_at_the_end_of_the_list": "PASSED",
+        "test_shift_gets_an_element_from_the_list": "PASSED"
+      },
+      "actual": {
+        "test_pop_gets_element_from_the_list": "PASSED",
+        "test_push_pop_respectively_add_remove_at_the_end_of_the_list": "PASSED",
+        "test_shift_gets_an_element_from_the_list": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "mutant_child_return_code": {
+      "expected": "non-zero",
+      "actual": 1,
+      "status": "PASS"
+    },
+    "mutant_rejecting_case_status": {
+      "expected": "FAILED",
+      "actual": "FAILED",
+      "status": "PASS"
+    },
+    "mutant_non_rejecting_anchors_status": {
+      "expected": {
+        "test_pop_gets_element_from_the_list": "PASSED",
+        "test_shift_gets_an_element_from_the_list": "PASSED"
+      },
+      "actual": {
+        "test_pop_gets_element_from_the_list": "PASSED",
+        "test_shift_gets_an_element_from_the_list": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "working_tree_unchanged": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "Original reference passed all 24 tests; mutant was successfully rejected by test_push_pop_respectively_add_remove_at_the_end_of_the_list."
+}

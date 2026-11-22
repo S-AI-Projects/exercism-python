@@ -1,0 +1,30 @@
+Task R36-T023 Automated Check Verification Report
+==================================================
+
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Original Reference Execution:
+  Exit code: 0
+  Executed cases: 24/24 passed
+
+Anchor Cases (Original Reference):
+  - test_pop_gets_element_from_the_list: PASSED
+  - test_push_pop_respectively_add_remove_at_the_end_of_the_list: PASSED
+  - test_shift_gets_an_element_from_the_list: PASSED
+
+Mutant Execution (Condition Mutation in pop):
+  Mutation: if node is None or node.prev is None: -> if node is None or node.succeeding is None:
+  Child exit code: 1 (non-zero: PASS)
+  - test_pop_gets_element_from_the_list: PASSED
+  - test_push_pop_respectively_add_remove_at_the_end_of_the_list: FAILED
+  - test_shift_gets_an_element_from_the_list: PASSED
+
+Rejecting Test Confirmed: test_push_pop_respectively_add_remove_at_the_end_of_the_list (UUID: c3f67e5d-cfa2-4c3e-a18f-7ce999c3c885)
+
+Working Tree Learner Stub:
+  Unsolved stub preserved: PASS
+
+All checks passed successfully.

@@ -1,0 +1,36 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "commands": [
+    "python -m pytest -q"
+  ],
+  "anchors": [
+    "test_eggs_not_allergic_to_anything",
+    "test_allergic_only_to_eggs",
+    "test_allergic_to_eggs_and_something_else"
+  ],
+  "reference": {
+    "exit_status": 0,
+    "expected_cases": 50,
+    "actual_cases": 50,
+    "output": "..................................................                       [100%]\n50 passed in 0.02s"
+  },
+  "alternative": {
+    "exit_status": 0,
+    "expected_cases": 50,
+    "actual_cases": 50,
+    "output": "..................................................                       [100%]\n50 passed in 0.02s"
+  },
+  "worked_input": {
+    "score": 5,
+    "expected": "True\n['eggs', 'shellfish']",
+    "actual": "True\n['eggs', 'shellfish']",
+    "exit_status": 0
+  },
+  "learner_solution_sha256_before_after": [
+    "2d0ef3333fa3298428a21f1ea445df0f7f4868d60921c24925e377b7bb14ef81",
+    "2d0ef3333fa3298428a21f1ea445df0f7f4868d60921c24925e377b7bb14ef81"
+  ]
+}

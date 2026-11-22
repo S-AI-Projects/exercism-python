@@ -1,0 +1,168 @@
+{
+  "task_id": "R36-T028",
+  "exercise": "exercises/practice/luhn",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/luhn/.meta/config.json",
+    "solution_file": "luhn.py",
+    "test_file": "luhn_test.py",
+    "example_file": ".meta/example.py",
+    "maintenance_doc": "docs/maintenance/luhn.md",
+    "checker_tool": "tools/course_checks/r36-t028.py",
+    "canonical_cases": [
+      "test_single_digit_strings_can_not_be_valid",
+      "test_a_single_zero_is_invalid",
+      "test_a_simple_valid_sin_that_remains_valid_if_reversed",
+      "test_a_simple_valid_sin_that_becomes_invalid_if_reversed",
+      "test_a_valid_canadian_sin",
+      "test_invalid_canadian_sin",
+      "test_invalid_credit_card",
+      "test_invalid_long_number_with_an_even_remainder",
+      "test_invalid_long_number_with_a_remainder_divisible_by_5",
+      "test_valid_number_with_an_even_number_of_digits",
+      "test_valid_number_with_an_odd_number_of_spaces",
+      "test_valid_strings_with_a_non_digit_added_at_the_end_become_invalid",
+      "test_valid_strings_with_punctuation_included_become_invalid",
+      "test_valid_strings_with_symbols_included_become_invalid",
+      "test_single_zero_with_space_is_invalid",
+      "test_more_than_a_single_zero_is_valid",
+      "test_input_digit_9_is_correctly_converted_to_output_digit_9",
+      "test_very_long_input_is_valid",
+      "test_valid_luhn_with_an_odd_number_of_digits_and_non_zero_first_digit",
+      "test_using_ascii_value_for_non_doubled_non_digit_isn_t_allowed",
+      "test_using_ascii_value_for_doubled_non_digit_isn_t_allowed",
+      "test_non_numeric_non_space_char_in_the_middle_with_a_sum_that_s_divisible_by_10_isn_t_allowed",
+      "test_is_valid_can_be_called_repeatedly"
+    ],
+    "baseline_cases": [
+      "test_single_digit_strings_can_not_be_valid",
+      "test_a_single_zero_is_invalid",
+      "test_a_simple_valid_sin_that_remains_valid_if_reversed"
+    ]
+  },
+  "metadata_checker_results": {
+    "real_config_status": {
+      "valid": true,
+      "message": "Valid metadata configuration",
+      "resolved_files": {
+        "solution": [
+          "exercises/practice/luhn/luhn.py"
+        ],
+        "test": [
+          "exercises/practice/luhn/luhn_test.py"
+        ],
+        "example": [
+          "exercises/practice/luhn/.meta/example.py"
+        ]
+      }
+    },
+    "fixtures": {
+      "missing_reference": {
+        "rejected": true,
+        "expected_rejection": true,
+        "error_message": "Declared file for role 'example' does not exist: '.meta/non_existent_example.py' (resolved to /Users/riyashinde/Documents/exercism-python/exercises/practice/luhn/.meta/non_existent_example.py)"
+      },
+      "missing_test": {
+        "rejected": true,
+        "expected_rejection": true,
+        "error_message": "Declared file for role 'test' does not exist: 'non_existent_luhn_test.py' (resolved to /Users/riyashinde/Documents/exercism-python/exercises/practice/luhn/non_existent_luhn_test.py)"
+      },
+      "path_traversal": {
+        "rejected": true,
+        "expected_rejection": true,
+        "error_message": "Illegal parent traversal in path for role 'solution': '../outside_solution.py'"
+      }
+    }
+  },
+  "counts": {
+    "total_test_cases": 23,
+    "executed_cases": 23,
+    "passed_cases": 23,
+    "failed_cases": 0
+  },
+  "test_statuses": {
+    "test_single_digit_strings_can_not_be_valid": "PASSED",
+    "test_a_single_zero_is_invalid": "PASSED",
+    "test_a_simple_valid_sin_that_remains_valid_if_reversed": "PASSED",
+    "test_a_simple_valid_sin_that_becomes_invalid_if_reversed": "PASSED",
+    "test_a_valid_canadian_sin": "PASSED",
+    "test_invalid_canadian_sin": "PASSED",
+    "test_invalid_credit_card": "PASSED",
+    "test_invalid_long_number_with_an_even_remainder": "PASSED",
+    "test_invalid_long_number_with_a_remainder_divisible_by_5": "PASSED",
+    "test_valid_number_with_an_even_number_of_digits": "PASSED",
+    "test_valid_number_with_an_odd_number_of_spaces": "PASSED",
+    "test_valid_strings_with_a_non_digit_added_at_the_end_become_invalid": "PASSED",
+    "test_valid_strings_with_punctuation_included_become_invalid": "PASSED",
+    "test_valid_strings_with_symbols_included_become_invalid": "PASSED",
+    "test_single_zero_with_space_is_invalid": "PASSED",
+    "test_more_than_a_single_zero_is_valid": "PASSED",
+    "test_input_digit_9_is_correctly_converted_to_output_digit_9": "PASSED",
+    "test_very_long_input_is_valid": "PASSED",
+    "test_valid_luhn_with_an_odd_number_of_digits_and_non_zero_first_digit": "PASSED",
+    "test_using_ascii_value_for_non_doubled_non_digit_isn_t_allowed": "PASSED",
+    "test_using_ascii_value_for_doubled_non_digit_isn_t_allowed": "PASSED",
+    "test_non_numeric_non_space_char_in_the_middle_with_a_sum_that_s_divisible_by_10_isn_t_allowed": "PASSED",
+    "test_is_valid_can_be_called_repeatedly": "PASSED"
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "real_config_passed": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "fixture_missing_reference_rejected": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "fixture_missing_test_rejected": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "fixture_path_traversal_rejected": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "child_return_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "executed_tests_count": {
+      "expected": 23,
+      "actual": 23,
+      "status": "PASS"
+    },
+    "baseline_cases_passed": {
+      "expected": {
+        "test_single_digit_strings_can_not_be_valid": "PASSED",
+        "test_a_single_zero_is_invalid": "PASSED",
+        "test_a_simple_valid_sin_that_remains_valid_if_reversed": "PASSED"
+      },
+      "actual": {
+        "test_single_digit_strings_can_not_be_valid": "PASSED",
+        "test_a_single_zero_is_invalid": "PASSED",
+        "test_a_simple_valid_sin_that_remains_valid_if_reversed": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "working_tree_learner_stub_untouched": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "Verified all 23 test cases pass against reference in scratch environment; verified real config passes and all 3 invalid metadata fixtures fail for their intended reasons. Learner stub remains strictly unsolved."
+}

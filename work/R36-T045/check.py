@@ -43,10 +43,19 @@ def benchmark(function, length: int, candidate_count: int) -> dict[str, object]:
         actual = function(word, candidates)
         samples_ns.append(time.perf_counter_ns() - started)
     assert actual == expected, f"size {length}, {candidate_count} candidates: wrong result"
+    def digest(values: list[str]) -> str:
+        encoded = json.dumps(values, ensure_ascii=False, separators=(",", ":")).encode()
+        return hashlib.sha256(encoded).hexdigest()
+
     return {
-        "input": {"target": word, "target_length": len(word), "candidate_count": len(candidates), "expected_match_count": len(expected)},
-        "expected_matches": expected,
-        "actual_matches": actual,
+        "input": {
+            "target": word,
+            "target_length": len(word),
+            "candidate_count": len(candidates),
+            "generation": "even indices are nonzero rotations of the target; odd indices change final b to c",
+        },
+        "expected_result": {"match_count": len(expected), "sha256": digest(expected)},
+        "actual_result": {"match_count": len(actual), "sha256": digest(actual), "matches_expected": actual == expected},
         "repetitions": REPETITIONS,
         "samples_ms": [round(value / 1_000_000, 6) for value in samples_ns],
         "median_ms": round(statistics.median(samples_ns) / 1_000_000, 6),

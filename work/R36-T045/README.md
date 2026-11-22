@@ -6,4 +6,6 @@ installs the reference only in that copy, runs the complete enabled suite, and
 benchmarks three deterministic inputs. Each timing is the median of seven
 repetitions, with raw samples retained and no timing threshold. The learner
 starter hash is checked before and after. `results.json` contains inputs,
-expected and actual matches, test output, timings, and tool versions.
+expected and actual match counts and hashes, test output, timings, and tool
+versions. The benchmark result payload is summarized to keep the evidence
+reviewable; each input is deterministic from the recorded target and rule.

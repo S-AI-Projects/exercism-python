@@ -1,0 +1,112 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "test_command": [
+    "/private/tmp/tanish-r36-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "expected_test_count": 18,
+  "actual_test_count": 18,
+  "test_exit_status": 0,
+  "test_output": "..................                                                       [100%]\n18 passed in 0.01s",
+  "anchors": [
+    "test_no_matches",
+    "test_detects_two_anagrams",
+    "test_does_not_detect_anagram_subsets"
+  ],
+  "benchmark_method": "7 perf_counter_ns repetitions; median per input; no timing threshold",
+  "measurements": [
+    {
+      "input": {
+        "target": "aaaaaaab",
+        "target_length": 8,
+        "candidate_count": 100,
+        "generation": "even indices are nonzero rotations of the target; odd indices change final b to c"
+      },
+      "expected_result": {
+        "match_count": 50,
+        "sha256": "91be647ea0755f8d1dfebb833b55c2fe1912c7c46da57b86d867d1afcdddaba7"
+      },
+      "actual_result": {
+        "match_count": 50,
+        "sha256": "91be647ea0755f8d1dfebb833b55c2fe1912c7c46da57b86d867d1afcdddaba7",
+        "matches_expected": true
+      },
+      "repetitions": 7,
+      "samples_ms": [
+        0.060042,
+        0.053458,
+        0.053542,
+        0.052917,
+        0.052584,
+        0.052916,
+        0.053042
+      ],
+      "median_ms": 0.053042
+    },
+    {
+      "input": {
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        "target_length": 32,
+        "candidate_count": 300,
+        "generation": "even indices are nonzero rotations of the target; odd indices change final b to c"
+      },
+      "expected_result": {
+        "match_count": 150,
+        "sha256": "34d36e18612744bc9a5477b265c90603a0e9577c76d7b1e81ae4de394ae99c1c"
+      },
+      "actual_result": {
+        "match_count": 150,
+        "sha256": "34d36e18612744bc9a5477b265c90603a0e9577c76d7b1e81ae4de394ae99c1c",
+        "matches_expected": true
+      },
+      "repetitions": 7,
+      "samples_ms": [
+        0.372125,
+        0.366417,
+        0.370667,
+        0.364084,
+        0.363416,
+        0.358541,
+        0.353125
+      ],
+      "median_ms": 0.364084
+    },
+    {
+      "input": {
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        "target_length": 128,
+        "candidate_count": 900,
+        "generation": "even indices are nonzero rotations of the target; odd indices change final b to c"
+      },
+      "expected_result": {
+        "match_count": 450,
+        "sha256": "3180e19b00d51aa10952bebf0ebc302f2553229f410912e88f007cce85f8d107"
+      },
+      "actual_result": {
+        "match_count": 450,
+        "sha256": "3180e19b00d51aa10952bebf0ebc302f2553229f410912e88f007cce85f8d107",
+        "matches_expected": true
+      },
+      "repetitions": 7,
+      "samples_ms": [
+        2.933833,
+        2.907458,
+        2.881792,
+        2.864458,
+        2.87275,
+        2.87075,
+        2.984958
+      ],
+      "median_ms": 2.881792
+    }
+  ],
+  "learner_solution_sha256_before_after": [
+    "17e82073db3b14f57cca0e782783c60d3d60d04ca5c38e66341fd13e10aff7da",
+    "17e82073db3b14f57cca0e782783c60d3d60d04ca5c38e66341fd13e10aff7da"
+  ]
+}

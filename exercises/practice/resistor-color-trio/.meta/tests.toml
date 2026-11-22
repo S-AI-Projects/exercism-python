@@ -11,12 +11,18 @@
 
 [d6863355-15b7-40bb-abe0-bfb1a25512ed]
 description = "Orange and orange and black"
+# Rationale: Maps to test_orange_and_orange_and_black. Verifies base unit 'ohms' formatting with black third band (10**0 = 1); resistance 33 ohms has len < 4 so no metric prefix scaling is needed.
+comment = "Maps to test_orange_and_orange_and_black. Verifies base unit 'ohms' formatting with black third band (10**0 = 1); resistance 33 ohms has len < 4 so no metric prefix scaling is needed."
 
 [1224a3a9-8c8e-4032-843a-5224e04647d6]
 description = "Blue and grey and brown"
+# Rationale: Maps to test_blue_and_grey_and_brown. Verifies non-zero exponent multiplication with brown third band (10**1 = 10); 680 ohms remains strictly below 1000 threshold (len == 3 < 4) and formats in base 'ohms'.
+comment = "Maps to test_blue_and_grey_and_brown. Verifies non-zero exponent multiplication with brown third band (10**1 = 10); 680 ohms remains strictly below 1000 threshold (len == 3 < 4) and formats in base 'ohms'."
 
 [b8bda7dc-6b95-4539-abb2-2ad51d66a207]
 description = "Red and black and red"
+# Rationale: Maps to test_red_and_black_and_red. Verifies 'kiloohms' prefix scaling when second band is black (0); evaluates 20 * 10**2 = 2000 ohms where integer division value // 1000 yields cleanly formatted '2 kiloohms'.
+comment = "Maps to test_red_and_black_and_red. Verifies 'kiloohms' prefix scaling when second band is black (0); evaluates 20 * 10**2 = 2000 ohms where integer division value // 1000 yields cleanly formatted '2 kiloohms'."
 
 [5b1e74bc-d838-4eda-bbb3-eaba988e733b]
 description = "Green and brown and orange"

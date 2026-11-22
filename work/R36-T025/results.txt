@@ -1,0 +1,60 @@
+Task R36-T025 Automated Check Verification & Scaling Report
+=================================================================
+
+Exercise: exercises/practice/high-scores
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Pytest Execution Results (in isolated scratch directory):
+  Child exit code: 0
+  Executed cases: 12/12 passed
+  Output summary: ............                                                             [100%]
+12 passed in 0.00s
+
+Canonical Test Cases Status:
+  - test_list_of_scores (Baseline): PASSED
+  - test_latest_score (Baseline): PASSED
+  - test_personal_best (Baseline): PASSED
+  - test_personal_top_three_from_a_list_of_scores: PASSED
+  - test_personal_top_highest_to_lowest: PASSED
+  - test_personal_top_when_there_is_a_tie: PASSED
+  - test_personal_top_when_there_are_less_than_3: PASSED
+  - test_personal_top_when_there_is_only_one: PASSED
+  - test_latest_score_after_personal_top_scores: PASSED
+  - test_scores_after_personal_top_scores: PASSED
+  - test_latest_score_after_personal_best: PASSED
+  - test_scores_after_personal_best: PASSED
+
+Process Startup Overhead vs. Algorithmic Work:
+  Python process startup median: 12.575 ms (12574584 ns)
+
+In-Process Scaling Benchmark Results (Median Timings across 15 Repetitions):
+  - Size 1 (Source: test_personal_top_when_there_is_only_one):
+      Input: [40]
+      __init__: 125 ns
+      latest(): 83 ns
+      personal_best(): 83 ns
+      personal_top_three(): 125 ns
+      Full lifecycle: 250 ns
+  - Size 4 (Source: test_list_of_scores):
+      Input: [30, 50, 20, 70]
+      __init__: 125 ns
+      latest(): 83 ns
+      personal_best(): 125 ns
+      personal_top_three(): 208 ns
+      Full lifecycle: 333 ns
+  - Size 13 (Source: test_personal_top_three_from_a_list_of_scores):
+      Input: [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
+      __init__: 83 ns
+      latest(): 83 ns
+      personal_best(): 167 ns
+      personal_top_three(): 291 ns
+      Full lifecycle: 500 ns
+
+Learner Solution Stub Verification:
+  Path: high_scores.py
+  Unsolved stub preserved: PASS
+
+All checks and benchmarks completed successfully.

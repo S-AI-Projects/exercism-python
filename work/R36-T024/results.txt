@@ -1,0 +1,36 @@
+Task R36-T024 Automated Check Verification Report
+=======================================================
+
+Exercise: exercises/practice/spiral-matrix
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Pytest Execution Results (in isolated scratch directory):
+  Child exit code: 0
+  Executed cases: 6/6 passed
+  Output summary: ......                                                                   [100%]
+6 passed in 0.00s
+
+Canonical Test Cases Status:
+  - test_empty_spiral (Baseline): PASSED
+  - test_trivial_spiral (Baseline): PASSED
+  - test_spiral_of_size_2 (Baseline): PASSED
+  - test_spiral_of_size_3: PASSED
+  - test_spiral_of_size_4: PASSED
+  - test_spiral_of_size_5: PASSED
+
+Before vs. After Parity Check (sizes 0 through 5):
+  - size 0: MATCH (output=[])
+  - size 1: MATCH (output=[[1]])
+  - size 2: MATCH (output=[[1, 2], [4, 3]])
+  - size 3: MATCH (output=[[1, 2, 3], [8, 9, 4], [7, 6, 5]])
+  - size 4: MATCH (output=[[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]])
+  - size 5: MATCH (output=[[1, 2, 3, 4, 5], [16, 17, 18, 19, 6], [15, 24, 25, 20, 7], [14, 23, 22, 21, 8], [13, 12, 11, 10, 9]])
+
+Learner Solution Stub Verification:
+  Path: spiral_matrix.py
+  Unsolved stub preserved: PASS
+
+All checks passed successfully.

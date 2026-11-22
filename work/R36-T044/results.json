@@ -1,0 +1,23 @@
+{
+  "commands": [
+    "python -m pytest -q"
+  ],
+  "expected_cases": 11,
+  "actual_cases": 11,
+  "anchors": [
+    "test_slices_of_one_from_one",
+    "test_slices_of_one_from_two",
+    "test_slices_of_two"
+  ],
+  "exit_status": 0,
+  "expected": "all enabled Series examples pass",
+  "actual": "...........                                                              [100%]\n11 passed in 0.01s",
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "learner_solution_sha256_before_after": [
+    "0c611cc43e85af9efa7279d9e9e252602c79566bcbcff72da5b3de57f2ba3cd0",
+    "0c611cc43e85af9efa7279d9e9e252602c79566bcbcff72da5b3de57f2ba3cd0"
+  ]
+}

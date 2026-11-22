@@ -8,4 +8,6 @@ def slices(series, length):
     elif len(series) < length:
         raise ValueError('slice length cannot be greater than series length')
 
-    return [series[idx:idx + length] for idx in range(len(series) - length + 1)]
+    # The last valid start is len(series) - length, so the range is exclusive.
+    last_start = len(series) - length + 1
+    return [series[start : start + length] for start in range(last_start)]

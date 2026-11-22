@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-11-22T14:46:24.172705+00:00",
+  "task": "R36-T029",
+  "exercise": "exercises/practice/poker",
+  "system_info": {
+    "python_version": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest_version": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "learner_stub": {
+    "path": "exercises/practice/poker/poker.py",
+    "initial_sha256": "6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe",
+    "after_mode1_sha256": "6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe",
+    "after_mode2_sha256": "6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe",
+    "after_mode3_sha256": "6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe",
+    "hash_identical_across_all_runs": true,
+    "unsolved": true
+  },
+  "modes": {
+    "mode1_real_reference": {
+      "description": "Maintained reference solution tested against full test suite",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "child_returncode": 0,
+      "total_executed": 37,
+      "passed": 37,
+      "failed": 0,
+      "named_anchor_cases": {
+        "test_single_hand_always_wins": "PASSED",
+        "test_highest_card_out_of_all_hands_wins": "PASSED",
+        "test_a_tie_has_multiple_winners": "PASSED"
+      },
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    },
+    "mode2_failing_reference": {
+      "description": "Deliberately failing reference solution",
+      "expected_exit_code": "non-zero (> 0)",
+      "actual_exit_code": 1,
+      "child_returncode": 1,
+      "total_executed": 37,
+      "passed": 0,
+      "failed": 37,
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    },
+    "mode3_zero_tests": {
+      "description": "Zero-test execution via filtering",
+      "expected_exit_code": "non-zero (> 0)",
+      "actual_exit_code": 5,
+      "child_returncode": 5,
+      "total_executed": 0,
+      "deselected": 37,
+      "scratch_dir_cleaned": true,
+      "status": "PASSED"
+    }
+  },
+  "overall_status": "PASSED"
+}

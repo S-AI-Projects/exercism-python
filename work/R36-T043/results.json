@@ -1,0 +1,32 @@
+{
+  "python": "3.13.17",
+  "pytest": "pytest 8.4.2",
+  "commands": {
+    "reference": "/private/tmp/tanish-r36-venv/bin/python -m pytest -q",
+    "mutant": "/private/tmp/tanish-r36-venv/bin/python -m pytest -q bottle_song_test.py::BottleSongTest::test_verse_with_2_bottles"
+  },
+  "input": {
+    "call": "recite(start=2)",
+    "case": "BottleSongTest::test_verse_with_2_bottles"
+  },
+  "mutation": {
+    "from": "if number -1 == 1:",
+    "to": "if number == 1:"
+  },
+  "reference": {
+    "exit_status": 0,
+    "expected_cases": 7,
+    "actual_cases": 7,
+    "output": ".......                                                                  [100%]\n7 passed in 0.01s"
+  },
+  "mutant": {
+    "exit_status": 1,
+    "expected_final_line": "There'll be one green bottle hanging on the wall.",
+    "actual_final_line": "There'll be one green bottles hanging on the wall.",
+    "output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ BottleSongTest.test_verse_with_2_bottles ___________________\n\nself = <bottle_song_test.BottleSongTest testMethod=test_verse_with_2_bottles>\n\n    def test_verse_with_2_bottles(self):\n        expected = [\n            \"Two green bottles hanging on the wall,\",\n            \"Two green bottles hanging on the wall,\",\n            \"And if one green bottle should accidentally fall,\",\n            \"There'll be one green bottle hanging on the wall.\",\n        ]\n>       self.assertEqual(recite(start=2), expected)\nE       AssertionError: Lists differ: ['Two[123 chars]y fall,', \"There'll be one green bottles hanging on the wall.\"] != ['Two[123 chars]y fall,', \"There'll be one green bottle hanging on the wall.\"]\nE       \nE       First differing element 3:\nE       \"There'll be one green bottles hanging on the wall.\"\nE       \"There'll be one green bottle hanging on the wall.\"\nE       \nE         ['Two green bottles hanging on the wall,',\nE          'Two green bottles hanging on the wall,',\nE          'And if one green bottle should accidentally fall,',\nE       -  \"There'll be one green bottles hanging on the wall.\"]\nE       ?                               -\nE       \nE       +  \"There'll be one green bottle hanging on the wall.\"]\n\nbottle_song_test.py:38: AssertionError\n=========================== short test summary info ============================\nFAILED bottle_song_test.py::BottleSongTest::test_verse_with_2_bottles - Asser...\n1 failed in 0.01s"
+  },
+  "learner_solution_sha256_before_after": [
+    "942234e1d907d3867f9eee8102573a8c398520a28ad1ca10cd23a0d9247134bc",
+    "942234e1d907d3867f9eee8102573a8c398520a28ad1ca10cd23a0d9247134bc"
+  ]
+}

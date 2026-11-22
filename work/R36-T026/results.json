@@ -1,0 +1,274 @@
+{
+  "task_id": "R36-T026",
+  "exercise": "exercises/practice/roman-numerals",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 8.4.2",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/roman-numerals/.meta/config.json",
+    "solution_file": "roman_numerals.py",
+    "test_file": "roman_numerals_test.py",
+    "example_file": ".meta/example.py",
+    "hints_file": "exercises/practice/roman-numerals/.docs/hints.md",
+    "canonical_cases": [
+      "test_1_is_i",
+      "test_2_is_ii",
+      "test_3_is_iii",
+      "test_4_is_iv",
+      "test_5_is_v",
+      "test_6_is_vi",
+      "test_9_is_ix",
+      "test_16_is_xvi",
+      "test_27_is_xxvii",
+      "test_48_is_xlviii",
+      "test_49_is_xlix",
+      "test_59_is_lix",
+      "test_66_is_lxvi",
+      "test_93_is_xciii",
+      "test_141_is_cxli",
+      "test_163_is_clxiii",
+      "test_166_is_clxvi",
+      "test_402_is_cdii",
+      "test_575_is_dlxxv",
+      "test_666_is_dclxvi",
+      "test_911_is_cmxi",
+      "test_1024_is_mxxiv",
+      "test_1666_is_mdclxvi",
+      "test_3000_is_mmm",
+      "test_3001_is_mmmi",
+      "test_3888_is_mmmdccclxxxviii",
+      "test_3999_is_mmmcmxcix"
+    ],
+    "named_anchor_cases": [
+      "test_1_is_i",
+      "test_2_is_ii",
+      "test_3_is_iii"
+    ]
+  },
+  "approaches_compared": {
+    "approach_1_reference": {
+      "name": "Greedy Subtraction Loop (loop-over-romans)",
+      "data_structure": "Descending list of 13 Arabic-Roman threshold tuples",
+      "control_flow": "Outer for-loop over 13 thresholds with inner while-subtraction loop",
+      "time_complexity": "O(digits), variable subtractions (1 to 15 steps)",
+      "space_complexity": "O(1) auxiliary, 13 tuples static storage",
+      "test_results": {
+        "exit_code": 0,
+        "passed": 27,
+        "total": 27
+      }
+    },
+    "approach_2_alternative": {
+      "name": "Positional Table Lookup (table-lookup)",
+      "data_structure": "Four decimal place lookup tuples (Thousands, Hundreds, Tens, Ones)",
+      "control_flow": "Zero loops; 4 integer divisions/modulos and 4 direct table index lookups",
+      "time_complexity": "Deterministic O(1) time",
+      "space_complexity": "O(1) auxiliary, 34 precomputed strings static storage",
+      "test_results": {
+        "exit_code": 0,
+        "passed": 27,
+        "total": 27
+      }
+    }
+  },
+  "counts": {
+    "total_canonical_cases": 27,
+    "reference_passed": 27,
+    "alternative_passed": 27,
+    "parity_matches": 27
+  },
+  "named_anchors_status": {
+    "reference": {
+      "test_1_is_i": "PASSED",
+      "test_2_is_ii": "PASSED",
+      "test_3_is_iii": "PASSED"
+    },
+    "alternative": {
+      "test_1_is_i": "PASSED",
+      "test_2_is_ii": "PASSED",
+      "test_3_is_iii": "PASSED"
+    }
+  },
+  "parity_verification": {
+    "test_1_is_i": {
+      "input": 1,
+      "output": "I",
+      "match": true
+    },
+    "test_2_is_ii": {
+      "input": 2,
+      "output": "II",
+      "match": true
+    },
+    "test_3_is_iii": {
+      "input": 3,
+      "output": "III",
+      "match": true
+    },
+    "test_4_is_iv": {
+      "input": 4,
+      "output": "IV",
+      "match": true
+    },
+    "test_5_is_v": {
+      "input": 5,
+      "output": "V",
+      "match": true
+    },
+    "test_6_is_vi": {
+      "input": 6,
+      "output": "VI",
+      "match": true
+    },
+    "test_9_is_ix": {
+      "input": 9,
+      "output": "IX",
+      "match": true
+    },
+    "test_16_is_xvi": {
+      "input": 16,
+      "output": "XVI",
+      "match": true
+    },
+    "test_27_is_xxvii": {
+      "input": 27,
+      "output": "XXVII",
+      "match": true
+    },
+    "test_48_is_xlviii": {
+      "input": 48,
+      "output": "XLVIII",
+      "match": true
+    },
+    "test_49_is_xlix": {
+      "input": 49,
+      "output": "XLIX",
+      "match": true
+    },
+    "test_59_is_lix": {
+      "input": 59,
+      "output": "LIX",
+      "match": true
+    },
+    "test_66_is_lxvi": {
+      "input": 66,
+      "output": "LXVI",
+      "match": true
+    },
+    "test_93_is_xciii": {
+      "input": 93,
+      "output": "XCIII",
+      "match": true
+    },
+    "test_141_is_cxli": {
+      "input": 141,
+      "output": "CXLI",
+      "match": true
+    },
+    "test_163_is_clxiii": {
+      "input": 163,
+      "output": "CLXIII",
+      "match": true
+    },
+    "test_166_is_clxvi": {
+      "input": 166,
+      "output": "CLXVI",
+      "match": true
+    },
+    "test_402_is_cdii": {
+      "input": 402,
+      "output": "CDII",
+      "match": true
+    },
+    "test_575_is_dlxxv": {
+      "input": 575,
+      "output": "DLXXV",
+      "match": true
+    },
+    "test_666_is_dclxvi": {
+      "input": 666,
+      "output": "DCLXVI",
+      "match": true
+    },
+    "test_911_is_cmxi": {
+      "input": 911,
+      "output": "CMXI",
+      "match": true
+    },
+    "test_1024_is_mxxiv": {
+      "input": 1024,
+      "output": "MXXIV",
+      "match": true
+    },
+    "test_1666_is_mdclxvi": {
+      "input": 1666,
+      "output": "MDCLXVI",
+      "match": true
+    },
+    "test_3000_is_mmm": {
+      "input": 3000,
+      "output": "MMM",
+      "match": true
+    },
+    "test_3001_is_mmmi": {
+      "input": 3001,
+      "output": "MMMI",
+      "match": true
+    },
+    "test_3888_is_mmmdccclxxxviii": {
+      "input": 3888,
+      "output": "MMMDCCCLXXXVIII",
+      "match": true
+    },
+    "test_3999_is_mmmcmxcix": {
+      "input": 3999,
+      "output": "MMMCMXCIX",
+      "match": true
+    }
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "reference_exit_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "reference_test_count": {
+      "expected": 27,
+      "actual": 27,
+      "status": "PASS"
+    },
+    "alternative_exit_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "alternative_test_count": {
+      "expected": 27,
+      "actual": 27,
+      "status": "PASS"
+    },
+    "all_anchors_passed_both": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "output_parity_100_percent": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "working_tree_learner_stub_untouched": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "Both Greedy Subtraction (reference) and Positional Table Lookup (alternative) pass all 27 canonical test cases with 100% output parity. Learner stub remains strictly unsolved."
+}

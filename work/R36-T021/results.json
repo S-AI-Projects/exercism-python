@@ -1,0 +1,131 @@
+{
+  "task_id": "R36-T021",
+  "exercise": "exercises/practice/resistor-color-trio",
+  "tool_versions": {
+    "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pytest": "pytest 9.2.0",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  },
+  "inputs": {
+    "config_path": "exercises/practice/resistor-color-trio/.meta/config.json",
+    "solution_file": "resistor_color_trio.py",
+    "test_file": "resistor_color_trio_test.py",
+    "example_file": ".meta/example.py",
+    "tests_toml_file": "exercises/practice/resistor-color-trio/.meta/tests.toml",
+    "selected_uuids": [
+      "d6863355-15b7-40bb-abe0-bfb1a25512ed",
+      "1224a3a9-8c8e-4032-843a-5224e04647d6",
+      "b8bda7dc-6b95-4539-abb2-2ad51d66a207"
+    ]
+  },
+  "counts": {
+    "total_canonical_cases": 10,
+    "before": {
+      "included": 10,
+      "excluded": 0
+    },
+    "after": {
+      "included": 10,
+      "excluded": 0
+    },
+    "changed_inclusions": 0
+  },
+  "expected_vs_actual": {
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "tests_toml_parses": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    "selected_rationales_verified": {
+      "expected": true,
+      "actual": true,
+      "details": {
+        "d6863355-15b7-40bb-abe0-bfb1a25512ed": {
+          "test_name": "test_orange_and_orange_and_black",
+          "comment": "Maps to test_orange_and_orange_and_black. Verifies base unit 'ohms' formatting with black third band (10**0 = 1); resistance 33 ohms has len < 4 so no metric prefix scaling is needed.",
+          "has_test_name": true,
+          "has_keywords": true
+        },
+        "1224a3a9-8c8e-4032-843a-5224e04647d6": {
+          "test_name": "test_blue_and_grey_and_brown",
+          "comment": "Maps to test_blue_and_grey_and_brown. Verifies non-zero exponent multiplication with brown third band (10**1 = 10); 680 ohms remains strictly below 1000 threshold (len == 3 < 4) and formats in base 'ohms'.",
+          "has_test_name": true,
+          "has_keywords": true
+        },
+        "b8bda7dc-6b95-4539-abb2-2ad51d66a207": {
+          "test_name": "test_red_and_black_and_red",
+          "comment": "Maps to test_red_and_black_and_red. Verifies 'kiloohms' prefix scaling when second band is black (0); evaluates 20 * 10**2 = 2000 ohms where integer division value // 1000 yields cleanly formatted '2 kiloohms'.",
+          "has_test_name": true,
+          "has_keywords": true
+        }
+      },
+      "status": "PASS"
+    },
+    "child_return_code": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "zero_test_run": {
+      "expected": false,
+      "actual": false,
+      "status": "PASS"
+    },
+    "executed_cases_count": {
+      "expected": 10,
+      "actual": 10,
+      "status": "PASS"
+    },
+    "named_cases_passed": {
+      "expected": {
+        "test_orange_and_orange_and_black": "PASSED",
+        "test_blue_and_grey_and_brown": "PASSED",
+        "test_red_and_black_and_red": "PASSED"
+      },
+      "actual": {
+        "test_orange_and_orange_and_black": "PASSED",
+        "test_blue_and_grey_and_brown": "PASSED",
+        "test_red_and_black_and_red": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "all_enabled_cases_passed": {
+      "expected": {
+        "test_orange_and_orange_and_black": "PASSED",
+        "test_blue_and_grey_and_brown": "PASSED",
+        "test_red_and_black_and_red": "PASSED",
+        "test_green_and_brown_and_orange": "PASSED",
+        "test_yellow_and_violet_and_yellow": "PASSED",
+        "test_blue_and_violet_and_blue": "PASSED",
+        "test_minimum_possible_value": "PASSED",
+        "test_maximum_possible_value": "PASSED",
+        "test_first_two_colors_make_an_invalid_octal_number": "PASSED",
+        "test_ignore_extra_colors": "PASSED"
+      },
+      "actual": {
+        "test_orange_and_orange_and_black": "PASSED",
+        "test_blue_and_grey_and_brown": "PASSED",
+        "test_red_and_black_and_red": "PASSED",
+        "test_green_and_brown_and_orange": "PASSED",
+        "test_yellow_and_violet_and_yellow": "PASSED",
+        "test_blue_and_violet_and_blue": "PASSED",
+        "test_minimum_possible_value": "PASSED",
+        "test_maximum_possible_value": "PASSED",
+        "test_first_two_colors_make_an_invalid_octal_number": "PASSED",
+        "test_ignore_extra_colors": "PASSED"
+      },
+      "status": "PASS"
+    },
+    "working_tree_unchanged": {
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "All assertions and checks passed successfully."
+}

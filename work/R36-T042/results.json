@@ -1,0 +1,43 @@
+{
+  "python": "3.13.17",
+  "pytest": "pytest 8.4.2",
+  "black": "python -m black, 25.1.0 (compiled: yes)\nPython (CPython) 3.13.17",
+  "generator": "generate_tests.py 0.3.0 for Python 3.13.17 (main, Oct 21 2026, 13:48:20)\n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "expected_case_count": 17,
+  "actual_case_counts": [
+    17,
+    17
+  ],
+  "stability": "identical after normalizing only the generated-date header",
+  "anchors": [
+    "test_recognizes_0",
+    "test_recognizes_1",
+    "test_unreadable_but_correctly_sized_inputs_return"
+  ],
+  "working_solution_sha256_before_after": [
+    "94887109787e503ad474c25abe1f819cde6cf93728502d6b922baeb7ea9a8474",
+    "94887109787e503ad474c25abe1f819cde6cf93728502d6b922baeb7ea9a8474"
+  ],
+  "rounds": [
+    {
+      "generator_args": "bin/generate_tests.py --spec-path problem-specifications ocr-numbers",
+      "generator_returncode": 0,
+      "generator_stdout": "ocr-numbers generated at exercises/practice/ocr-numbers/ocr_numbers_test.py",
+      "pytest_args": "python -m pytest -q",
+      "pytest_returncode": 0,
+      "test_output": ".................                                                        [100%]\n17 passed in 0.01s",
+      "case_count": 17,
+      "reference_substituted_in_scratch": true
+    },
+    {
+      "generator_args": "bin/generate_tests.py --spec-path problem-specifications ocr-numbers",
+      "generator_returncode": 0,
+      "generator_stdout": "ocr-numbers generated at exercises/practice/ocr-numbers/ocr_numbers_test.py",
+      "pytest_args": "python -m pytest -q",
+      "pytest_returncode": 0,
+      "test_output": ".................                                                        [100%]\n17 passed in 0.01s",
+      "case_count": 17,
+      "reference_substituted_in_scratch": true
+    }
+  ]
+}

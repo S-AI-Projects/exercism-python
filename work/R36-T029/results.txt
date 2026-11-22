@@ -1,0 +1,50 @@
+Task R36-T029 Verification Results
+==================================
+Date/Time: 2026-11-22T14:46:24.172705+00:00
+Exercise: exercises/practice/poker
+Python: 3.14.7
+Pytest: pytest 8.4.2
+Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+Overall Status: PASSED
+
+Learner Stub Integrity:
+-----------------------
+File: exercises/practice/poker/poker.py
+Status: Strictly Unsolved (signature + pass)
+Initial SHA-256: 6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe
+After Mode 1:    6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe
+After Mode 2:    6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe
+After Mode 3:    6a4b5adab3ba9261fb4f9e2b09abc549b9ea37bf0774edc3c7759cec9a8b41fe
+All Hashes Match: True
+
+Mode 1: Maintained Reference Implementation
+-------------------------------------------
+Exit Code: 0 (Expected: 0)
+Child Return Code: 0
+Executed Tests: 37 / 37
+Passed: 37
+Failed: 0
+Scratch Cleaned: True
+Anchor Cases:
+  - test_single_hand_always_wins: PASSED
+  - test_highest_card_out_of_all_hands_wins: PASSED
+  - test_a_tie_has_multiple_winners: PASSED
+
+Mode 2: Deliberately Failing Reference Implementation
+-----------------------------------------------------
+Exit Code: 1 (Expected: non-zero)
+Child Return Code: 1
+Executed Tests: 37
+Passed: 0
+Failed: 37
+Scratch Cleaned: True
+Assertion Failure Detected & Propagated: True
+
+Mode 3: Zero-Test Selection (Empty Filter)
+------------------------------------------
+Exit Code: 5 (Expected: non-zero)
+Child Return Code: 5
+Executed Tests: 0
+Deselected Tests: 37
+Scratch Cleaned: True
+Zero-Test Run Detected & Rejected: True

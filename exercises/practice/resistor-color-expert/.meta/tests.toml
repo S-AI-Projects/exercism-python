@@ -11,12 +11,15 @@
 
 [8c4f9fb6-d477-4250-bc57-b325d2be226f]
 description = "Orange, orange, black, and red"
+comment = "Standard 4‑band resistor calculation: orange‑orange‑black (×10³) with red tolerance ±2% → 33 Ω ±2%"
 
 [d1d4a769-9210-43cc-9a14-6af6ce4c0b00]
 description = "Blue, grey, brown, and violet"
+comment = "4‑band resistor: blue‑grey‑brown (×10²) with violet tolerance ±0.1% → 680 Ω ±0.1%"
 
 [6af91bc3-8275-4c38-920a-185d30feb5f3]
 description = "Red, black, red, and green"
+comment = "5‑band resistor: red‑black‑red (×10²) with green multiplier (×10⁵) and green tolerance ±0.5% → 2 kΩ ±0.5%"
 
 [9c4630bf-0dda-4212-baca-2f5111530b4d]
 description = "Green, brown, orange, and grey"

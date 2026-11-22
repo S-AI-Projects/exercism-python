@@ -1,0 +1,54 @@
+Task R36-T027 Automated Check & Language Guidance Report
+=================================================================
+
+Exercise: exercises/practice/isbn-verifier
+Tool Versions:
+  Python: 3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]
+  Pytest: pytest 8.4.2
+  Platform: macOS-27.2.1-arm64-arm-64bit-Mach-O
+
+Pytest Execution Results (in isolated scratch directory):
+  Child exit code: 0
+  Executed cases: 21/21 passed
+  Output summary: .....................                                                    [100%]
+21 passed in 0.01s
+
+Canonical Test Cases Status:
+  - test_valid_isbn (Baseline): PASSED
+  - test_invalid_isbn_check_digit (Baseline): PASSED
+  - test_valid_isbn_with_a_check_digit_of_10 (Baseline): PASSED
+  - test_check_digit_is_a_character_other_than_x: PASSED
+  - test_invalid_check_digit_in_isbn_is_not_treated_as_zero: PASSED
+  - test_invalid_character_in_isbn_is_not_treated_as_zero: PASSED
+  - test_x_is_only_valid_as_a_check_digit: PASSED
+  - test_only_one_check_digit_is_allowed: PASSED
+  - test_x_is_not_substituted_by_the_value_10: PASSED
+  - test_valid_isbn_without_separating_dashes: PASSED
+  - test_isbn_without_separating_dashes_and_x_as_check_digit: PASSED
+  - test_isbn_without_check_digit_and_dashes: PASSED
+  - test_too_long_isbn_and_no_dashes: PASSED
+  - test_too_short_isbn: PASSED
+  - test_isbn_without_check_digit: PASSED
+  - test_check_digit_of_x_should_not_be_used_for_0: PASSED
+  - test_empty_isbn: PASSED
+  - test_input_is_9_characters: PASSED
+  - test_invalid_characters_are_not_ignored_after_checking_length: PASSED
+  - test_invalid_characters_are_not_ignored_before_checking_length: PASSED
+  - test_input_is_too_long_but_contains_a_valid_isbn: PASSED
+
+Micro-Examples & Language Construct Verification:
+  1. Micro-Example 1 (Targeted List Mutation):
+     Input: 012345678X
+     Output: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '10'] (length 10)
+     Status: PASS
+  2. Micro-Example 2 (Pitfall of String .replace('X', '10')):
+     Input: 35982X5079
+     Output: '35982105079' (length 11)
+     Status: PASS
+  3. String Immutability TypeError Enforced: PASS
+
+Learner Solution Stub Verification:
+  Path: isbn_verifier.py
+  Unsolved stub preserved: PASS
+
+All checks and micro-example assertions passed successfully.

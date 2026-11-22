@@ -1,0 +1,58 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "metadata_validation_exit_status": 0,
+  "resolved_paths": {
+    "solution": [
+      "food_chain.py"
+    ],
+    "test": [
+      "food_chain_test.py"
+    ],
+    "example": [
+      ".meta/example.py"
+    ]
+  },
+  "editor_role_declared": false,
+  "negative_fixtures": [
+    {
+      "name": "missing-reference",
+      "expected": "reject with missing file",
+      "actual_exit_status": 1,
+      "actual_diagnostic": "file role example references a missing file: missing_reference.py"
+    },
+    {
+      "name": "missing-test",
+      "expected": "reject with missing file",
+      "actual_exit_status": 1,
+      "actual_diagnostic": "file role test references a missing file: missing_test.py"
+    },
+    {
+      "name": "outside-exercise",
+      "expected": "reject with parent traversal",
+      "actual_exit_status": 1,
+      "actual_diagnostic": "file role example uses parent traversal: ../outside.py"
+    }
+  ],
+  "test_command": [
+    "/private/tmp/tanish-r36-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "anchors": [
+    "test_fly",
+    "test_spider",
+    "test_bird"
+  ],
+  "expected_cases": 10,
+  "actual_cases": 10,
+  "test_exit_status": 0,
+  "test_output": "..........                                                               [100%]\n10 passed in 0.01s",
+  "learner_solution_sha256_before_after": [
+    "d7c1f854251ec4677ff36fdabbc87ef0ebcff8e8559fdee91b52fdeb8c3dc6b5",
+    "d7c1f854251ec4677ff36fdabbc87ef0ebcff8e8559fdee91b52fdeb8c3dc6b5"
+  ]
+}

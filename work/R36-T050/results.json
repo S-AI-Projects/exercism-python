@@ -1,0 +1,65 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "test_command": [
+    "/private/tmp/tanish-r36-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "/var/folders/cr/jdqkd5w95kq5h5b32qjsdx3m0000gn/T/r36-t050-18nzfowc/dominoes/dominoes_test.py"
+  ],
+  "expected_test_count": 13,
+  "actual_test_count": 13,
+  "test_exit_status": 0,
+  "test_output": ".............                                                            [100%]\n13 passed in 0.02s",
+  "selected_cases": [
+    {
+      "test": "test_empty_input_empty_output",
+      "input": [],
+      "contract_outcome": "valid",
+      "expected_reference_repr": "[]",
+      "actual_reference_repr": "[]"
+    },
+    {
+      "test": "test_singleton_input_singleton_output",
+      "input": [
+        [
+          1,
+          1
+        ]
+      ],
+      "contract_outcome": "valid",
+      "expected_reference_repr": "[(1, 1)]",
+      "actual_reference_repr": "[(1, 1)]"
+    },
+    {
+      "test": "test_singleton_that_can_t_be_chained",
+      "input": [
+        [
+          1,
+          2
+        ]
+      ],
+      "contract_outcome": "none",
+      "expected_reference_repr": "None",
+      "actual_reference_repr": "None"
+    }
+  ],
+  "expected_example_outputs": [
+    "[]",
+    "[(1, 1)]",
+    "None"
+  ],
+  "actual_example_outputs": [
+    "[]",
+    "[(1, 1)]",
+    "None"
+  ],
+  "example_exit_status": 0,
+  "learner_solution_sha256_before_after": [
+    "89f1fede34db8dbd73fb7103476080307e769425049014bf60b7d5e632f9743b",
+    "89f1fede34db8dbd73fb7103476080307e769425049014bf60b7d5e632f9743b"
+  ]
+}

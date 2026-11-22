@@ -1,0 +1,128 @@
+{
+  "tool_versions": {
+    "python": "3.13.17",
+    "pytest": "pytest 8.4.2"
+  },
+  "anchors": [
+    "test_two_cards_one_trick",
+    "test_three_cards_one_trick",
+    "test_four_cards_one_trick"
+  ],
+  "expected_real_case_count": 28,
+  "real_reference_run": {
+    "command": [
+      "/private/tmp/tanish-r36-venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "/private/var/folders/cr/jdqkd5w95kq5h5b32qjsdx3m0000gn/T/r36-t049-reference-aw5hexwj/r36-t049-run-jcb9bpdz/camicia/camicia_test.py"
+    ],
+    "child_exit_status": 0,
+    "runner_exit_status": 0,
+    "failure_reason": null,
+    "executed_cases": 28,
+    "learner_hashes_before": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "learner_hashes_after": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "temporary_copy_removed": true,
+    "task_checker_exit_status": 0,
+    "task_checker_hashes_before_after": [
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      },
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      }
+    ],
+    "temporary_parent_removed": true,
+    "output_bytes": 98,
+    "output_sha256": "a91d1c3d5a2917286a66a366993cc211f92d6da51ced1d3c5a2d442ffb4a6e6b",
+    "output_excerpt": "............................                                             [100%]\n28 passed in 0.04s"
+  },
+  "failing_reference_run": {
+    "command": [
+      "/private/tmp/tanish-r36-venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "/private/var/folders/cr/jdqkd5w95kq5h5b32qjsdx3m0000gn/T/r36-t049-failing-reference-o2ix_pig/r36-t049-run-pb5j5nf5/camicia/camicia_test.py"
+    ],
+    "child_exit_status": 1,
+    "runner_exit_status": 1,
+    "failure_reason": "pytest child exited nonzero",
+    "executed_cases": 28,
+    "learner_hashes_before": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "learner_hashes_after": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "temporary_copy_removed": true,
+    "task_checker_exit_status": 1,
+    "task_checker_hashes_before_after": [
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      },
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      }
+    ],
+    "temporary_parent_removed": true,
+    "output_bytes": 31080,
+    "output_sha256": "7f1c3e0f87ffb221a47eb48ff341b681612468e7e4003ae54d972ee72a4a861c",
+    "output_excerpt": "FFFFFFFFFFFFFFFFFFFFFFFFFFFF                                             [100%]\n=================================== FAILURES ===================================\n________________________ CamiciaTest.test_anderson_2013 ________________________\n\nself = <camicia_test.CamiciaTest testMethod=test_anderson_2013>\n\n    def test_anderson_2013(self):\n        # fmt: off\n        player_a = ['6', '7', 'A', '3', 'Q', '3', '5', 'J', '3', '2', 'J', '7', '4', '5', 'Q', '10', '5', 'A', 'J', '2', 'K', '8', '9', '9', 'K', '3']\n        player_b = ['4', 'J', '6', '9', '8', '5', '10', '7', '9', 'Q', '2', '7', '10', '8', '4', '10', 'A', '6', '4', 'A', '6', '8', 'Q', 'K', 'K', '2']\n        # fmt: on\n>       self.assertEqual(\n            simulate_game(player_a, player_b),\n            {\"status\": \"finished\", \"cards\": 7225, \"tricks\": 1016},\n        )\nE       AssertionError: {'status': 'broken', 'cards': 0, 'tricks': 0} != {'status': 'finished', 'cards': 7225, 'tricks': 1016}\nE       - {'cards': 0, 'status': 'broken', 'tricks': 0}\nE       ?           ^             ^^^^ ^\n... output excerpt omitted ...\nFAILED camicia_test.py::CamiciaTest::test_the_queen_seduces_the_king - Assert...\nFAILED camicia_test.py::CamiciaTest::test_the_story_is_starting_to_get_a_bit_complicated\nFAILED camicia_test.py::CamiciaTest::test_three_cards_one_trick - AssertionEr...\nFAILED camicia_test.py::CamiciaTest::test_two_cards_one_trick - AssertionErro...\nFAILED camicia_test.py::CamiciaTest::test_two_tricks - AssertionError: {'stat...\n28 failed in 0.15s"
+  },
+  "empty_selection_run": {
+    "command": [
+      "/private/tmp/tanish-r36-venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "/private/var/folders/cr/jdqkd5w95kq5h5b32qjsdx3m0000gn/T/r36-t049-empty-selection-p46ogk29/r36-t049-run-kcw_kbxr/camicia/camicia_test.py",
+      "-k",
+      "r36_t049_no_such_test_case"
+    ],
+    "child_exit_status": 5,
+    "runner_exit_status": 1,
+    "failure_reason": "pytest selected zero tests",
+    "executed_cases": 0,
+    "learner_hashes_before": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "learner_hashes_after": {
+      "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+    },
+    "temporary_copy_removed": true,
+    "task_checker_exit_status": 1,
+    "task_checker_hashes_before_after": [
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      },
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      }
+    ],
+    "temporary_parent_removed": true,
+    "output_bytes": 22,
+    "output_sha256": "cd68ee6c18085d9699a122d33f3939ae8ef24bf991c9330af284f518c162a2a8",
+    "output_excerpt": "28 deselected in 0.01s"
+  },
+  "interrupted_run": {
+    "expected": "KeyboardInterrupt propagates and scratch copy is removed",
+    "actual": "KeyboardInterrupt propagated; no scratch children remained",
+    "learner_hashes_before_after": [
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      },
+      {
+        "camicia.py": "7c4efaf5bc5ca3364e054d5ae384c6dc0ead442af2d7a527fa575737510ec62e"
+      }
+    ],
+    "temporary_parent_removed": true
+  },
+  "all_runs_preserved_learner_hashes": true,
+  "all_temporary_directories_removed": true
+}

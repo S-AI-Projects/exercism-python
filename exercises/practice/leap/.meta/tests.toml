@@ -4,12 +4,15 @@
 
 [6466b30d-519c-438e-935d-388224ab5223]
 description = "year not divisible by 4 in common year"
+comment = "Validates the primary common year rule: year % 4 != 0 evaluates to True (test_year_not_divisible_by_4_in_common_year)."
 
 [ac227e82-ee82-4a09-9eb6-4f84331ffdb0]
 description = "year divisible by 2, not divisible by 4 in common year"
+comment = "Distinguishes even non-leap years from leap years using year % 2 == 0 and year % 4 != 0 (test_year_divisible_by_2_not_divisible_by_4_in_common_year)."
 
 [4fe9b84c-8e65-489e-970b-856d60b8b78e]
 description = "year divisible by 4, not divisible by 100 in leap year"
+comment = "Validates standard leap year rule where year % 4 == 0 and year % 100 != 0 evaluates to True (test_year_divisible_by_4_not_divisible_by_100_in_leap_year)."
 
 [7fc6aed7-e63c-48f5-ae05-5fe182f60a5d]
 description = "year divisible by 4 and 5 is still a leap year"

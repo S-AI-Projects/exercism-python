@@ -4,12 +4,18 @@
 
 [0c5ec4bd-dea7-4138-8651-1203e1cb9f44]
 description = "no rows"
+# Implemented in test_no_rows: Python represents 0 rows as an empty list []. Evaluated by `if not minefield: return []`.
+comment = "Implemented in test_no_rows. Input [] evaluates to False in Python boolean context (`if not minefield:`), returning [] immediately without indexing errors."
 
 [650ac4c0-ad6b-4b41-acde-e4ea5852c3b8]
 description = "no columns"
+# Implemented in test_no_columns: Python represents 0 columns as ['']. Empty string length is 0, so inner iteration range(0) is a no-op.
+comment = "Implemented in test_no_columns. Input [''] has row length 0; range(0) in Python yields 0 iterations, preserving ['']."
 
 [6fbf8f6d-a03b-42c9-9a58-b489e9235478]
 description = "no mines"
+# Implemented in test_no_mines: Spaces without mines produce count('*') == 0 across all adjacent slices, leaving spaces untouched.
+comment = "Implemented in test_no_mines. String slicing and str.count('*') return 0 for all cells, so spaces remain unchanged."
 
 [61aff1c4-fb31-4078-acad-cd5f1e635655]
 description = "minefield with only mines"

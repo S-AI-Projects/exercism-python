@@ -1,0 +1,9 @@
+{
+  "task_id": "R36-T033",
+  "exercise": "exercises/practice/grep",
+  "reference_tests_passed": 25,
+  "mutant_rejected": true,
+  "rejecting_test": "test_one_file_several_matches_inverted_flag",
+  "learner_stub_unsolved": true,
+  "status": "PASS"
+}

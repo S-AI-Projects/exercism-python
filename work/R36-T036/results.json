@@ -1,0 +1,9 @@
+{
+  "task_id": "R36-T036",
+  "exercise": "exercises/practice/diffie-hellman",
+  "reference_passed": true,
+  "alternative_passed": true,
+  "tests_passed": 6,
+  "learner_stub_unsolved": true,
+  "status": "PASS"
+}

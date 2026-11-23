@@ -1,2 +1,5 @@
 def is_armstrong_number(number):
-    return sum(pow(int(digit), len(str(number))) for digit in str(number)) == number
+    # Invariant: An Armstrong number equals the sum of each digit raised to the total digit count.
+    digits_str = str(number)
+    num_digits = len(digits_str)
+    return sum(int(digit) ** num_digits for digit in digits_str) == number

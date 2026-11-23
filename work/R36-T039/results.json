@@ -1,0 +1,8 @@
+{
+  "task_id": "R36-T039",
+  "exercise": "exercises/practice/isogram",
+  "exit_code": 0,
+  "isolated_runner_passed": true,
+  "learner_stub_untouched": true,
+  "status": "PASS"
+}

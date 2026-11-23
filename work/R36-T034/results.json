@@ -1,0 +1,9 @@
+{
+  "task_id": "R36-T034",
+  "exercise": "exercises/practice/simple-cipher",
+  "tests_passed": 12,
+  "exit_code": 0,
+  "invariant_documented": true,
+  "learner_stub_unsolved": true,
+  "status": "PASS"
+}

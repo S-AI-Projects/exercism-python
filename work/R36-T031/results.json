@@ -1,0 +1,19 @@
+{
+  "task_id": "R36-T031",
+  "exercise": "exercises/practice/minesweeper",
+  "target_uuids": [
+    "0c5ec4bd-dea7-4138-8651-1203e1cb9f44",
+    "650ac4c0-ad6b-4b41-acde-e4ea5852c3b8",
+    "6fbf8f6d-a03b-42c9-9a58-b489e9235478"
+  ],
+  "total_canonical_cases": 12,
+  "included_cases": 12,
+  "excluded_cases": 0,
+  "tests_passed": 15,
+  "exit_code": 0,
+  "python_version": "3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "pytest_version": "pytest 9.2.0",
+  "learner_stub_unsolved": true,
+  "toml_valid": true,
+  "status": "PASS"
+}

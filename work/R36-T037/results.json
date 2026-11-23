@@ -1,0 +1,9 @@
+{
+  "task_id": "R36-T037",
+  "exercise": "exercises/practice/circular-buffer",
+  "tests_passed": 14,
+  "exit_code": 0,
+  "micro_example_verified": true,
+  "learner_stub_unsolved": true,
+  "status": "PASS"
+}
